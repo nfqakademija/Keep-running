@@ -1,4 +1,4 @@
-NFQ Akademija
+Keep Running
 ============
 
-Startinis projekto template.
+Kaunas-4 2016 Pavasaris

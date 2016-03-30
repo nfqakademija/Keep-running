@@ -1,10 +1,15 @@
-var x = document.getElementById("demo");
+var x = document.getElementById("map");
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showError());
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
     } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
+}
+var y =document.getElementById("demo");
+function showPosition(position) {
+    y.innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
 }
 
 function showPosition(position) {

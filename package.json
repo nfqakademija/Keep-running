@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "NFQ",
-  "repository": "",
+  "repository": "https://github.com/nfqakademija/Keep-running.git",
   "devDependencies": {
     "bower": "^1.6.3",
     "gulp": "^3.9.0",

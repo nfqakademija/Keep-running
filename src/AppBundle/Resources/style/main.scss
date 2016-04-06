@@ -1,0 +1,94 @@
+//bootstrap
+//@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//my style
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: right;
+    position: absolute;
+    top: 1em;
+    right: 0;
+    z-index: 10;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 0.5em 2em;
+    opacity: 0.7;
+    transition: 0.2s all;
+}
+
+nav ul li a:hover {
+    opacity: 1;
+}
+
+#starting-page {
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("../images/pexels-photo.jpg");
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#starting-page #text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#starting-page #text h1 {
+    font-size: 5em;    
+}
+
+#starting-page #text p {
+    line-height: 22px;
+    font-size: 1.05em;
+}
+
+#starting-page #text a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-top: 3em;
+    font-size: 1.5em;
+    border: 2px solid white;
+    padding: 0.8em 2em;
+    border-radius: 1em;
+    background-color: rgba(255,255,255,0.2);
+    transition: 0.5s all;
+}
+
+#starting-page #text a:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+@media only screen and (max-width:1500px) {
+    #starting-page #text h1 {
+        font-size: 4em;
+    }
+
+    #starting-page #text p {
+        font-size: 1em;
+    }
+
+	#starting-page #text a {
+		font-size: 1.2em;
+	}
+}

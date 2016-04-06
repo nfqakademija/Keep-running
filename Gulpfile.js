@@ -6,7 +6,7 @@ var concat  = require('gulp-concat');
 var uglify  = require('gulp-uglify');
 
 var dir = {
-    assets: './app/Resources/',
+    assets: './src/AppBundle/Resources/',
     dist: './web/',
     bower: './bower_components/',
     bootstrapJS: './bower_components/bootstrap-sass/assets/javascripts/bootstrap/'
@@ -46,5 +46,9 @@ gulp.task('fonts', function() {
         ])
         .pipe(gulp.dest(dir.dist + 'fonts'));
 });
+
+//gulp.task('sass:watch', function () {
+//    gulp.watch('./sass/**/*.scss', ['sass']);
+//});
 
 gulp.task('default', ['sass', 'scripts', 'fonts', 'images']);

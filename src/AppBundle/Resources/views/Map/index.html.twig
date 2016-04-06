@@ -1,0 +1,33 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Keep Running - {{ parent() }}{% endblock %}
+
+{% block body %}
+
+    <section id="map-page">
+        <header>
+            <h1>Keep Running</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Nav 1</a></li>
+                    <li><a href="#">Nav 2</a></li>
+                    <li><a href="#">Nav 3</a></li>
+                    <li><a href="#">Nav 4</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="map"></section>
+
+        <section id="map-more-actions">
+            <nav>
+                <ul>
+                    <li><a href="#">Pakeisti filtrą</a></li>
+                    <li><a href="#">Įvertinti</a></li>
+                    <li><a href="#">Pasidalinti</a></li>
+                </ul>
+            </nav>
+        </section>
+    </section>
+
+{% endblock %}

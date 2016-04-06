@@ -41,10 +41,35 @@ body section:not(#starting-page) {
                 color: #2d6987;
             }
         }
+
+        ul li {
+            display: inline;
+        }
     }
 
-    header ul li {
-        display: inline;
+    #content {
+        background-color: #f8f8f8;
+
+        #heading {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/pexels-photo.jpg');
+            background-position: center 30%;
+        }
+
+        h2 {
+            padding: 1.5em 2em;
+            margin: 0 auto;
+            color: white;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            max-width: 1140px;
+        }
+
+        #text {
+            width: 1140px;
+            margin: 0 auto;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            background-color: white;
+            padding: 2em;
+        }
     }
 }
 

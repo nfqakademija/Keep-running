@@ -18,13 +18,4 @@ class HomeController extends Controller
         ));
     }
 
-    public function mapAction()
-    {
-        $helloWorld="Hello world";
-        return $this->render('AppBundle:Home:map.html.twig', array(
-            'helloWorld'=>$helloWorld
-            // ...
-        ));
-    }
-
 }

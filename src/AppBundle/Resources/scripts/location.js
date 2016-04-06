@@ -15,11 +15,11 @@ function getLocation() {
 
 var mapDiv = null;
 function showPositionInMap(position) {
-    var x = document.getElementById("demo");
+    //var x = document.getElementById("demo");
 
     var currentPosition;
 
-    mapDiv = document.getElementById('showMap');
+    mapDiv = document.getElementById('map');
 
     var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
@@ -41,10 +41,10 @@ function showPositionInMap(position) {
         title:"Pradinė jūsų vieta!"
     });
 
-    currentPosition=showPositionCoordinates(position);
+   // currentPosition=showPositionCoordinates(position);
 
-    x.innerHTML = "Latitude: " + currentPosition.latitude +
-        "<br>Longitude: " + currentPosition.longitude;
+   // x.innerHTML = "Latitude: " + currentPosition.latitude +
+     //   "<br>Longitude: " + currentPosition.longitude;
 }
 
 function showPositionCoordinates(position) {

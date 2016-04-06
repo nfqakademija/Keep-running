@@ -49,6 +49,8 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest(dir.dist + 'fonts'));
 });
 
+//TODO:write gulp watcher task
+
 //gulp.task('sass:watch', function () {
 //    gulp.watch('./sass/**/*.scss', ['sass']);
 //});

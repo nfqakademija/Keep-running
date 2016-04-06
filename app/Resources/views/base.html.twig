@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>{% block title %}{{ "My project" }}{% endblock %}</title>
+    <title>{% block title %}{{ "Keep Running" }}{% endblock %}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     {#<link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico')}}">#}
     {% block stylesheets %}
@@ -16,7 +16,10 @@
         {% block header %}
             {% include "::inc/header.html.twig" %}
         {% endblock %}
-        {% block body %}{% endblock %}
+        {% block body %}
+            {#TODO:move navigation from all pages to here#}
+            {#TODO:move section wrapper here#}
+        {% endblock %}
     {% endblock %}
 </div>
 {% block footer %}

@@ -1,8 +1,11 @@
-app.index:
+home.index:
     path:     /
     defaults: { _controller: AppBundle:Home:index }
 
+home.about:
+    path:     /about
+    defaults: { _controller: AppBundle:Home:about }
 
-index:
+map.index:
     path:     /map
     defaults: { _controller: AppBundle:Map:index }

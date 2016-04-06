@@ -26,7 +26,9 @@ gulp.task('scripts', function() {
             //dir.bootstrapJS + 'transition.js',
             //...
             // Main JS file
-            dir.assets + 'scripts/main.js'
+            dir.assets + 'scripts/main.js',
+            dir.assets + 'scripts/location.js'
+
         ])
         .pipe(concat('script.js'))
         .pipe(uglify())
@@ -50,5 +52,6 @@ gulp.task('fonts', function() {
 //gulp.task('sass:watch', function () {
 //    gulp.watch('./sass/**/*.scss', ['sass']);
 //});
+
 
 gulp.task('default', ['sass', 'scripts', 'fonts', 'images']);

@@ -2,6 +2,7 @@ app.index:
     path:     /
     defaults: { _controller: AppBundle:Home:index }
 
+
 index:
     path:     /map
     defaults: { _controller: AppBundle:Map:index }

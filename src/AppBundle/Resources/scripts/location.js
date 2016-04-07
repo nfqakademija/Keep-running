@@ -45,7 +45,7 @@ function showPositionInMap(position) {
     var goalMarker = new google.maps.Marker({
         position: goalPosition,
         map: generatedMap,
-        draggable: false,
+        draggable: true,
         navigationControlOptions: {
             style: google.maps.NavigationControlStyle.SMALL
         },

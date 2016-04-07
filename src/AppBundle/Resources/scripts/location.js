@@ -22,6 +22,7 @@ function showPositionInMap(position) {
     mapDiv = document.getElementById('map');
 
     var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    var goalPosition = new google.maps.LatLng(position.coords.latitude +0.0003, position.coords.longitude+0.0003);
 
     var options = {
         zoom: 15,
@@ -41,6 +42,15 @@ function showPositionInMap(position) {
         },
         title:"Pradinė jūsų vieta!"
     });
+    var goalMarker = new google.maps.Marker({
+        position: goalPosition,
+        map: generatedMap,
+        draggable: false,
+        navigationControlOptions: {
+            style: google.maps.NavigationControlStyle.SMALL
+        },
+        title:"Jusu tikslas!"
+    });
 
    // currentPosition=showPositionCoordinates(position);
 
@@ -50,9 +60,12 @@ function showPositionInMap(position) {
 
 function showPositionCoordinates(position) {
     var currentPosition = new Object();
+    var goalPosition =new Object();
     currentPosition.latitude=position.coords.latitude;
     currentPosition.longitude=position.coords.longitude;
-    return currentPosition;
+    goalPosition.latitude=position.coords.latitude + random(10)*0.0001;
+    goalPosition.longitude=position.coords.longitude+ random(10)*0.0001;
+    return currentPosition,goalPosition ;
 }
 
 function showError(error) {

@@ -22,13 +22,13 @@ function showPositionInMap(position) {
     mapDiv = document.getElementById('map');
 
     var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-    var goalPosition = new google.maps.LatLng(position.coords.latitude +0.0003, position.coords.longitude+0.0003);
+    var goalPosition = new google.maps.LatLng(position.coords.latitude +Math.floor(Math.random() * 11)* 0.0001, Math.floor(Math.random() * 11)* 0.0001);
 
     var options = {
-        zoom: 15,
+        zoom: 10,
         center: currentPosition,
         mapTypeControl: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.SATELITE
     };
 
     var generatedMap = new google.maps.Map(mapDiv, options);
@@ -82,5 +82,22 @@ function showError(error) {
         case error.UNKNOWN_ERROR:
             x.innerHTML = "An unknown error occurred."
             break;
+    }
+    var service = new google.maps.DistanceMatrixService();
+    service.getDistanceMatrix(
+        {
+            origins: [origin1, origin2],
+            destinations: [destinationA, destinationB],
+            travelMode: google.maps.TravelMode.DRIVING,
+            transitOptions: TransitOptions,
+            drivingOptions: DrivingOptions,
+            unitSystem: UnitSystem,
+            avoidHighways: Boolean,
+            avoidTolls: Boolean,
+        }, callback);
+
+    function callback(response, status) {
+        // See Parsing the Results for
+        // the basics of a callback function.
     }
 }

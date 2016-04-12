@@ -66,6 +66,7 @@ function showPositionCoordinates(position) {
     goalPosition.latitude=position.coords.latitude + random(10)*0.0001;
     goalPosition.longitude=position.coords.longitude+ random(10)*0.0001;
     return currentPosition,goalPosition ;
+    var bla=test;
 }
 
 function showError(error) {

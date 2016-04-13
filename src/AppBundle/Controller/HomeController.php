@@ -20,6 +20,7 @@ class HomeController extends Controller
 
     public function aboutAction()
     {
+
         return $this->render('AppBundle:Home:about.html.twig');
     }
 

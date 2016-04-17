@@ -27,7 +27,8 @@ gulp.task('scripts', function() {
             //...
             // Main JS file
             dir.assets + 'scripts/main.js',
-            dir.assets + 'scripts/location.js'
+         //   dir.assets + 'scripts/location.js'
+            dir.assets + 'scripts/drawpath.js'
 
         ])
         .pipe(concat('script.js'))

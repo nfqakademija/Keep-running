@@ -1,86 +1,65 @@
-/**
- * Created by vaidotas on 16.4.6.
- */
-/**
- * Created by vaidotas on 16.4.4.
- */
+var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPositionInMap,showError);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
+function showRoute() {
+    var directionsDisplay = initMap();
+    var wayPoints = getWayPoints();
+    plotTrack(directionsDisplay, wayPoints);
 }
 
-var mapDiv = null;
-function showPositionInMap(position) {
-    //var x = document.getElementById("demo");
-
-    var currentPosition;
-
-    mapDiv = document.getElementById('map');
-
-    var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-    var goalPosition = new google.maps.LatLng(position.coords.latitude +0.0003, position.coords.longitude+0.0003);
-
-    var options = {
-        zoom: 15,
-        center: currentPosition,
+function initMap() {
+    var directionsDisplay = new google.maps.DirectionsRenderer;
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center:currentPosition/* {lat: 54.89692, lng: 23.93794}*/,
         mapTypeControl: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    var generatedMap = new google.maps.Map(mapDiv, options);
-
-    var marker = new google.maps.Marker({
-        position: currentPosition,
-        map: generatedMap,
-        draggable: true,
-        navigationControlOptions: {
-            style: google.maps.NavigationControlStyle.SMALL
-        },
-        title:"Pradinė jūsų vieta!"
+        mapTypeId: google.maps.MapTypeId.SATELITE
     });
-    var goalMarker = new google.maps.Marker({
-        position: goalPosition,
-        map: generatedMap,
-        draggable: true,
-        navigationControlOptions: {
-            style: google.maps.NavigationControlStyle.SMALL
-        },
-        title:"Jusu tikslas!"
-    });
+    directionsDisplay.setMap(map);
 
-   // currentPosition=showPositionCoordinates(position);
-
-   // x.innerHTML = "Latitude: " + currentPosition.latitude +
-     //   "<br>Longitude: " + currentPosition.longitude;
+    return directionsDisplay;
 }
 
-function showPositionCoordinates(position) {
-    var currentPosition = new Object();
-    var goalPosition =new Object();
-    currentPosition.latitude=position.coords.latitude;
-    currentPosition.longitude=position.coords.longitude;
-    goalPosition.latitude=position.coords.latitude + random(10)*0.0001;
-    goalPosition.longitude=position.coords.longitude+ random(10)*0.0001;
-    return currentPosition,goalPosition ;
-}
+function getWayPoints() {
+    var waypts = [];
+    var waypoints = JSON.parse(document.getElementById('map'));
 
-function showError(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            x.innerHTML = "User denied the request for Geolocation."
-            break;
-        case error.POSITION_UNAVAILABLE:
-            x.innerHTML = "Location information is unavailable."
-            break;
-        case error.TIMEOUT:
-            x.innerHTML = "The request to get user location timed out."
-            break;
-        case error.UNKNOWN_ERROR:
-            x.innerHTML = "An unknown error occurred."
-            break;
+    /*    [
+        {"lat": "54.89592", "lon": "23.93767"},
+        {"lat": "54.89909", "lon": "23.93947"},
+        {"lat": "54.89932", "lon": "23.93998"},
+        {"lat": "54.89587", "lon": "23.94828"},
+        {"lat": "54.89721", "lon": "23.94579"},
+        {"lat": "54.90215", "lon": "23.94608"},
+        {"lat": "54.90008", "lon": "23.9423"},
+        {"lat": "54.9019", "lon": "23.9388"}
+    ];*/
+
+    for (var i = 0; i < waypoints.length; i++) {
+        var lat = parseFloat(waypoints[i]["lat"]);
+        var lon = parseFloat(waypoints[i]["lon"]);
+        waypts.push({
+            location: new google.maps.LatLng(lat,lon),
+            stopover: true
+        });
     }
+
+    return waypts;
+}
+
+function plotTrack(directionsDisplay, wayPoints) {
+    var directionsService = new google.maps.DirectionsService;
+
+    directionsService.route({
+        origin: new google.maps.LatLng(54.89692,23.93794),
+        destination: new google.maps.LatLng(54.89859,23.93921),
+        waypoints: wayPoints,
+        optimizeWaypoints: true,
+        travelMode: google.maps.TravelMode.WALKING
+    }, function(response, status) {
+        if (status === google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+        } else {
+            window.alert('Directions request failed due to ' + status);
+        }
+    });
 }

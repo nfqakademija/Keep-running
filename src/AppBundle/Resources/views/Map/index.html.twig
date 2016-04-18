@@ -15,8 +15,8 @@
                 </ul>
             </nav>
         </header>
-
-        <section id="map" data-points="{{ tracks }}"></section>
+{# added to test tracks#}
+        <section id="map" data-points="{{ tracks }}">{{ tracks }}</section>
 
         {#<section id="map-more-actions">#}
             {#<nav>#}
@@ -28,11 +28,12 @@
             {#</nav>#}
         {#</section>#}
     </section>
-
+    {#end body#}
 {% endblock %}
+
 {% block javascripts %}
     <script src="{{ asset('js/script.js') }}"></script>
     <script type="text/javascript">
-        window.onload = getLocation;
+        window.onload = showRoute;
     </script>
 {% endblock %}

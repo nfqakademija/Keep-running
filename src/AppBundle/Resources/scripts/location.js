@@ -1,4 +1,5 @@
 var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+var attr  = document.getElementById(map);
 
 function showRoute() {
     var directionsDisplay = initMap();
@@ -21,7 +22,7 @@ function initMap() {
 
 function getWayPoints() {
     var waypts = [];
-    var waypoints = JSON.parse(document.getElementById('map'));
+    var waypoints = JSON.parse(attr.getAttribute('data-points'));
 
     /*    [
         {"lat": "54.89592", "lon": "23.93767"},

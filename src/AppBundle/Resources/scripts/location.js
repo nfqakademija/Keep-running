@@ -1,5 +1,6 @@
-var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-var attr  = document.getElementById(map);
+// var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+var currentPosition = {lat: 54.89692, lng: 23.93794};
+var attr  = document.getElementById('map');
 
 function showRoute() {
     var directionsDisplay = initMap();
@@ -23,8 +24,9 @@ function initMap() {
 function getWayPoints() {
     var waypts = [];
     var waypoints = JSON.parse(attr.getAttribute('data-points'));
+    waypoints = waypoints.points;
 
-    /*    [
+   /* var waypoints =    [
         {"lat": "54.89592", "lon": "23.93767"},
         {"lat": "54.89909", "lon": "23.93947"},
         {"lat": "54.89932", "lon": "23.93998"},
@@ -35,7 +37,7 @@ function getWayPoints() {
         {"lat": "54.9019", "lon": "23.9388"}
     ];*/
 
-    for (var i = 0; i < waypoints.length; i++) {
+    for (var i = 0; i <7 /*waypoints.length*/; i++) {
         var lat = parseFloat(waypoints[i]["lat"]);
         var lon = parseFloat(waypoints[i]["lon"]);
         waypts.push({

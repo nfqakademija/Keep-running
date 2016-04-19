@@ -1,3 +1,5 @@
 services:
-    app_bundle.repository:
+    app_bundle.repository.tracks:
         class: AppBundle\Repository\Tracks
+        calls:
+            - [setConnection, ['@doctrine.dbal.default_connection']]

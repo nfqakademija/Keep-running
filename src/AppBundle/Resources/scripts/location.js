@@ -67,8 +67,8 @@ function plotTrack(directionsDisplay, wayPoints) {
     var startPointLatitde = startPoint.lat();
     var startPointLongtitude = wayPoints[0].location.lng();
     var endPoint = wayPoints[wayPoints.length-1].location;
-    var endPointLatitde = startPoint.lat();
-    var endPointLongtitude = wayPoints[0].location.lng();
+    var endPointLatitde = endPoint.lat();
+    var endPointLongtitude = endPoint.lng();
     wayPoints.shift();
     wayPoints.pop();
     directionsService.route({

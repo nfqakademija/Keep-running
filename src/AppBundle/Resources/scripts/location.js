@@ -25,36 +25,55 @@ function getWayPoints() {
     var waypts = [];
     var waypoints = JSON.parse(attr.getAttribute('data-points'));
     waypoints = waypoints.points;
+    var pointLength=waypoints.length-1;
+    var firstRoutePoints = waypoints[0];
+    var lastRoutePoints = waypoints[pointLength];
 
-   /* var waypoints =    [
-        {"lat": "54.89592", "lon": "23.93767"},
-        {"lat": "54.89909", "lon": "23.93947"},
-        {"lat": "54.89932", "lon": "23.93998"},
-        {"lat": "54.89587", "lon": "23.94828"},
-        {"lat": "54.89721", "lon": "23.94579"},
-        {"lat": "54.90215", "lon": "23.94608"},
-        {"lat": "54.90008", "lon": "23.9423"},
-        {"lat": "54.9019", "lon": "23.9388"}
-    ];*/
+    var firstRoutePointLatitude = parseFloat(firstRoutePoints["lat"]);
+    var firstRoutePointLongtitude = parseFloat(firstRoutePoints["lon"]);
 
-    for (var i = 0; i <7 /*waypoints.length*/; i++) {
-        var lat = parseFloat(waypoints[i]["lat"]);
-        var lon = parseFloat(waypoints[i]["lon"]);
+    waypts.push({
+        location: new google.maps.LatLng(firstRoutePointLatitude,firstRoutePointLongtitude),
+        stopover: true
+    });
+
+    var loopStep = Math.floor(pointLength/8);
+
+    var i = loopStep;
+    var needPointsLenght = pointLength - loopStep;
+    while(i<pointLength){
+        var routeLatitude = parseFloat(waypoints[i]["lat"]);
+        var routeLongtitude = parseFloat(waypoints[i]["lon"]);
         waypts.push({
-            location: new google.maps.LatLng(lat,lon),
+            location: new google.maps.LatLng(routeLatitude,routeLongtitude),
             stopover: true
         });
+        i=i+loopStep;
     }
+    var lastRoutePointLatitude = parseFloat(lastRoutePoints["lat"]);
+    var lastRoutePointLongtitude = parseFloat(lastRoutePoints["lon"]);
+
+    waypts.push({
+        location: new google.maps.LatLng(lastRoutePointLatitude,lastRoutePointLongtitude),
+        stopover: true
+    });
 
     return waypts;
 }
 
 function plotTrack(directionsDisplay, wayPoints) {
     var directionsService = new google.maps.DirectionsService;
-
+    var startPoint = wayPoints[0].location
+    var startPointLatitde = startPoint.lat();
+    var startPointLongtitude = wayPoints[0].location.lng();
+    var endPoint = wayPoints[wayPoints.length-1].location;
+    var endPointLatitde = startPoint.lat();
+    var endPointLongtitude = wayPoints[0].location.lng();
+    wayPoints.shift();
+    wayPoints.pop();
     directionsService.route({
-        origin: new google.maps.LatLng(54.89692,23.93794),
-        destination: new google.maps.LatLng(54.89859,23.93921),
+        origin: new google.maps.LatLng(startPointLatitde,startPointLongtitude),
+        destination: new google.maps.LatLng(endPointLatitde,endPointLongtitude),
         waypoints: wayPoints,
         optimizeWaypoints: true,
         travelMode: google.maps.TravelMode.WALKING

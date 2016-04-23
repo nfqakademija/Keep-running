@@ -1,10 +1,17 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: vaidotas
+ * Date: 16.4.23
+ * Time: 19.48
+ */
 
 namespace AppBundle\Repository;
 
 use Doctrine\DBAL\Connection;
 
-class Tracks
+
+class TracksLevels
 {
     /**
      * @var Connection
@@ -14,18 +21,11 @@ class Tracks
     /**
      * @return array
      */
-    public function getTracks()
+    public function getLevels()
     {
-        return $this->connection->fetchAll('select * from running_tracks');
+        return $this->connection->fetchAll('select * from running_tracks_level');
     }
 
-    /**
-     * @return array
-     */
-    public function getFirstTrackPoints()
-    {
-        return $this->connection->fetchAll('select trackPoints from running_tracks limit 1 offset 1 ');
-    }
     /**
      * @param Connection $connection
      */
@@ -33,5 +33,4 @@ class Tracks
     {
         $this->connection = $connection;
     }
-
 }

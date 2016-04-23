@@ -3,3 +3,7 @@ services:
         class: AppBundle\Repository\Tracks
         calls:
             - [setConnection, ['@doctrine.dbal.default_connection']]
+    app_bundle.repository.trackslevels:
+            class: AppBundle\Repository\TracksLevels
+            calls:
+                - [setConnection, ['@doctrine.dbal.default_connection']]

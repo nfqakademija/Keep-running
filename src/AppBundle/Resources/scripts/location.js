@@ -1,4 +1,5 @@
 // var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+var currentPosition = {lat: 54.89692, lng: 23.93794};
 var attr  = document.getElementById('map');
 var directionsDisplay = [];
 var directionsService = [];
@@ -21,14 +22,12 @@ function initMap() {
 }
 
 function getWayPoints() {
-
-    //var directionsDisplay = new google.maps.DirectionsRenderer;
-    map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
+    var mapOptions ={
+        zoom: 12,
+        center:currentPosition/* {lat: 54.89692, lng: 23.93794}*/,
         mapTypeControl: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-
+    };
     var wayPoints = [];
     var wayPointsFromAttribute= JSON.parse(attr.getAttribute('data-points'));
     wayPointsFromAttribute = wayPointsFromAttribute.points;
@@ -40,13 +39,11 @@ function getWayPoints() {
     //First rout point Latitude and longtitude
     var firstRoutePointLatitude = parseFloat(firstRoutePoints["lat"]);
     var firstRoutePointLongtitude = parseFloat(firstRoutePoints["lon"]);
-
     wayPoints.push({
         location: new google.maps.LatLng(firstRoutePointLatitude,firstRoutePointLongtitude),
         stopover: true
     });
     var loopStep = Math.floor(pointLength/15);
-
     var i = loopStep;
     while(i<pointLength){
         var routeLatitude = parseFloat(wayPointsFromAttribute[i]["lat"]);
@@ -60,12 +57,14 @@ function getWayPoints() {
     //Last rout point Latitude and longtitude
     var lastRoutePointLatitude = parseFloat(lastRoutePoints["lat"]);
     var lastRoutePointLongtitude = parseFloat(lastRoutePoints["lon"]);
-
     wayPoints.push({
         location: new google.maps.LatLng(lastRoutePointLatitude,lastRoutePointLongtitude),
         stopover: true
     });
-
+    map = new google.maps.Map(attr, mapOptions );
+    google.maps.event.addDomListener(window,'resize',function() {
+        google.maps.event.trigger(map,'resize');
+    });
     var i = 0;
     var tmpWayPointsArray1=[];
     var tmpWayPointsArray2=[];
@@ -81,7 +80,7 @@ function getWayPoints() {
         i++;
     }
     plotTrack(tmpWayPointsArray1);
-    //plotTrack(tmpWayPointsArray2);
+    plotTrack(tmpWayPointsArray2);
 }
 
 function plotTrack(wayPoints) {
@@ -93,8 +92,7 @@ function plotTrack(wayPoints) {
     var endPointLongtitude = endPoint.lng();
     wayPoints.shift();
     wayPoints.pop();
-
-    var request ={
+    var request = {
         origin: new google.maps.LatLng(startPointLatitde,startPointLongtitude),
         destination: new google.maps.LatLng(endPointLatitde,endPointLongtitude),
         waypoints: wayPoints,
@@ -109,11 +107,9 @@ function plotTrack(wayPoints) {
     directionsDisplay[instance].setMap(map);
     directionsService[instance].route(request, function (response, status) {
         if (status == google.maps.DirectionsStatus.OK) {
-            console.log(status);
             directionsDisplay[instance].setDirections(response);
         }else {
             window.alert('Directions request failed due to ' + status);
         }
     });
-
 }

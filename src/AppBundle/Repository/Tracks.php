@@ -24,7 +24,7 @@ class Tracks
      */
     public function getFirstTrackPoints()
     {
-        return $this->connection->fetchAll('select trackPoints from running_tracks limit 1 offset 2 ');
+        return $this->connection->fetchAll('select trackPoints from running_tracks limit 1 offset 1 ');
     }
     /**
      * @param Connection $connection

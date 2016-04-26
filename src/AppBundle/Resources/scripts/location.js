@@ -108,7 +108,8 @@ function plotTrack(wayPoints) {
 
     directionsService.push(new google.maps.DirectionsService());
     directionsDisplay.push(new google.maps.DirectionsRenderer({
-        preserveViewport: true
+        preserveViewport: true,
+        suppressMarkers: true
     }));
 
     var instance = directionsService.length - 1;

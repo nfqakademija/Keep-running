@@ -28,6 +28,17 @@
             {#</nav>#}
         {#</section>#}
     </section>
+
+    <div id="filters-in-map" style="display:none">
+        <form action="">
+            Trasos ilgis <input type="range" name="distance" min="1" max="20"> <span>10 km</span> <br>
+            Sunkumas
+            <input type="checkbox" name="easy-difficulty" value="easy"> Lengvas
+            <input type="checkbox" name="normal-difficulty" value="normal"> Normalus
+            <input type="checkbox" name="hard-difficulty" value="hard"> Sunkus
+            <button>Generuoti trasą</button>
+        </form>
+    </div>
     {#end body#}
 {% endblock %}
 

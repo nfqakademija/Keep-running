@@ -6,6 +6,19 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+section:not(#starting-page) {
+    padding: 2em 0;
+}
+
 body section:not(#starting-page) {
     header {
         overflow: auto;

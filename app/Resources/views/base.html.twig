@@ -11,17 +11,12 @@
     {% block canonical_meta %}{% endblock %}
 </head>
 <body>
-<div class="container">
-    {% block container %}
-        {% block header %}
-            {% include "::inc/header.html.twig" %}
-        {% endblock %}
-        {% block body %}
-            {#TODO:move navigation from all pages to here#}
-            {#TODO:move section wrapper here#}
-        {% endblock %}
+{% block container %}
+    {% block header %}
+        {% include "::inc/header.html.twig" %}
     {% endblock %}
-</div>
+    {% block body %}{% endblock %}
+{% endblock %}
 {% block footer %}
 {% include "::inc/footer.html.twig" %}
 {% endblock %}

@@ -1,5 +1,4 @@
 // var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-var currentPosition = {lat: 54.89692, lng: 23.93794};
 var attr  = document.getElementById('map');
 var map = null;
 
@@ -55,29 +54,43 @@ function groupPoints(wayPoints) {
 }
 
 function getWayPoints() {
+    var wayPointsFromAttribute= JSON.parse(attr.getAttribute('data-points'));
+    wayPointsFromAttribute = wayPointsFromAttribute.points;
+    var wayPoints = [];
+    var points = findPoints(wayPointsFromAttribute);
+    var currentPosition = {lat: points[0]['lat'], lng: points[0]['lon']};
     var mapOptions ={
-        zoom: 12,
+        zoom: 14,
         center:currentPosition/* {lat: 54.89692, lng: 23.93794}*/,
         mapTypeControl: false,
+        scrollwheel: false,
+        scaleControl: false,
+        streetViewControl: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
-    var wayPointsFromAttribute= JSON.parse(attr.getAttribute('data-points'));
-    wayPointsFromAttribute = wayPointsFromAttribute.points;
+    map = new google.maps.Map(attr, mapOptions );
+    google.maps.event.addListener(map, 'click', function(event){
+        this.setOptions({scrollwheel:true});
+    });
 
-    var wayPoints = [];
-    var points = findPoints(wayPointsFromAttribute);
+    var marker=new google.maps.Marker({
+        position:currentPosition,
+        map: map
+    });
+    var info = new google.maps.InfoWindow({
+        content: 'Startas!'
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+        info.open(map, marker);
+    });
+
     for (var i = 0; i < points.length; i++) {
         wayPoints.push({
             location: new google.maps.LatLng(points[i]['lat'],points[i]['lon']),
             stopover: true
         });
     }
-
-    map = new google.maps.Map(attr, mapOptions );
-    google.maps.event.addDomListener(window,'resize',function() {
-        google.maps.event.trigger(map,'resize');
-    });
 
     var groupedPoints = groupPoints(wayPoints);
     plotTrack(groupedPoints.groupA);
@@ -99,7 +112,7 @@ function plotTrack(wayPoints) {
         origin: new google.maps.LatLng(startPointLatitde,startPointLongtitude),
         destination: new google.maps.LatLng(endPointLatitde,endPointLongtitude),
         waypoints: wayPoints,
-        optimizeWaypoints: true,
+        optimizeWaypoints: false,
         travelMode: google.maps.TravelMode.WALKING
     };
 

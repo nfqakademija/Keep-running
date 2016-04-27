@@ -26,13 +26,25 @@ class TrackImportCommand extends ContainerAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        $repository = $this->getContainer()->get('app_bundle.repository.tracks');
         $path  = './data/Tracks/';
 
-$files = array();
+        $points = [];
         foreach (glob($path ."*.gpx") as $file) {
-            $files[] = $json = json_encode(simplexml_load_string(file_get_contents($file)));
-           // $files[] = file_get_contents($file);
+            $file = simplexml_load_string(file_get_contents($file));
+
+            foreach ($file->{'trk'}->{'trkseg'}->{'trkpt'} as $point) {
+                $points[] = [
+                    'lat' => (string) $point['lat'],
+                    'lon' => (string) $point['lon'],
+                ];
+            }
+
+            $pointsInJson = json_encode(['points' => $points]);
+
+            // persist to mysql
+            $repository->persistTrack($pointsInJson);
         }
-        $output->writeln($files);
     }
+
 }

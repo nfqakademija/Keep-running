@@ -4,7 +4,7 @@
 
 {% block body %}
 
-    <section id="starting-page">
+    <header id="starting-page">
 
         {# not needed for now #}
         {#<nav>#}
@@ -21,31 +21,48 @@
             <p>
                 Keep Running skirtas žmonėms, kuriems nusibodo įprasta bėgimo trasa ir nori kažko naujo. Su šiuo įrankiu galėsite patogiai susigeneruoti visiškai atsitiktinę bėgimo trasą.
             </p>
-            <a href="#home-page-filters">Pradėti</a>
+            <a href="#filters">Pradėti</a>
         </div>
-    </section>
+    </header>
 
-    <section id="home-page-filters">
-        <div class="container">
-            <h1>Filtrai</h1>
-            <form action="">
-                Trasos ilgis <input type="range" name="distance" min="1" max="20"> <span>10 km</span> <br>
-                Sunkumas
-                <input type="checkbox" name="easy-difficulty" value="easy"> Lengvas
-                <input type="checkbox" name="normal-difficulty" value="normal"> Normalus
-                <input type="checkbox" name="hard-difficulty" value="hard"> Sunkus
-                <button>Generuoti trasą</button>
-            </form>
-        </div>
-    </section>
+    <div id="main-page-sections">
+        <section id="filters">
+            <div class="container">
+                <h1>Filtrai</h1>
+                <form action="{{ path('map.index') }}">
+                    <div class="form-group">
+                        Trasos ilgis:
+                        <input type="range" name="distance" min="1" max="20"> <span>10 km</span>
+                    </div>
+                    <div class="form-group">
+                        Sunkumas:
+                        <input type="checkbox" name="difficulty" value="easy"> Lengvas
+                        <input type="checkbox" name="difficulty" value="normal"> Normalus
+                        <input type="checkbox" name="difficulty" value="hard"> Sunkus
+                    </div>
+                    <div class="form-group">
+                        <button>Generuoti trasą</button>
+                    </div>
+                </form>
+            </div>
+        </section>
 
-    <section id="about-project">
+        <section id="about-project" style="display: none;">
+            <div class="container">
+                <h1>Apie projektą</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut iste itaque minus modi mollitia quo reiciendis! Architecto delectus est hic ipsa iusto totam ullam vitae? Ad adipisci at distinctio laudantium nulla optio quo sequi sit tenetur vel. Aliquam architecto commodi cumque ducimus, possimus quod veritatis. Cumque debitis ipsam voluptas!
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
         <div class="container">
-            <h1>Apie projektą</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut iste itaque minus modi mollitia quo reiciendis! Architecto delectus est hic ipsa iusto totam ullam vitae? Ad adipisci at distinctio laudantium nulla optio quo sequi sit tenetur vel. Aliquam architecto commodi cumque ducimus, possimus quod veritatis. Cumque debitis ipsam voluptas!
+                NFQ Akademija 2016, Kaunas.
             </p>
         </div>
-    </section>
+    </footer>
 
 {% endblock %}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Čia Markis</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T19:49:28Z</time>
+  </metadata>
+  <trk>
+    <name>Viljampole - Karo muziejus</name>
+    <cmt>Varniu tiltas &gt; Neries krantinė &gt; Pilies žiedas &gt; Ožeškienė &gt; Darbo birža (įkalnė) &gt; Karo muziejus</cmt>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/405448591">
+      <text>Viljampole - Karo muziejus</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.91318" lon="23.90683"/>
+      <trkpt lat="54.91266" lon="23.90644"/>
+      <trkpt lat="54.91245" lon="23.90622"/>
+      <trkpt lat="54.91226" lon="23.90591"/>
+      <trkpt lat="54.91203" lon="23.90532"/>
+      <trkpt lat="54.91188" lon="23.9044"/>
+      <trkpt lat="54.91176" lon="23.9032"/>
+      <trkpt lat="54.91152" lon="23.90001"/>
+      <trkpt lat="54.9114" lon="23.89906"/>
+      <trkpt lat="54.91115" lon="23.89789"/>
+      <trkpt lat="54.91102" lon="23.89746"/>
+      <trkpt lat="54.91075" lon="23.89667"/>
+      <trkpt lat="54.9103" lon="23.89569"/>
+      <trkpt lat="54.91003" lon="23.89522"/>
+      <trkpt lat="54.90929" lon="23.89425"/>
+      <trkpt lat="54.90586" lon="23.89024"/>
+      <trkpt lat="54.90538" lon="23.88963"/>
+      <trkpt lat="54.9051" lon="23.88902"/>
+      <trkpt lat="54.90499" lon="23.88869"/>
+      <trkpt lat="54.90494" lon="23.88838"/>
+      <trkpt lat="54.90432" lon="23.88787"/>
+      <trkpt lat="54.90401" lon="23.88882"/>
+      <trkpt lat="54.90363" lon="23.88982"/>
+      <trkpt lat="54.90313" lon="23.89101"/>
+      <trkpt lat="54.90228" lon="23.89288"/>
+      <trkpt lat="54.90206" lon="23.8929"/>
+      <trkpt lat="54.90192" lon="23.89285"/>
+      <trkpt lat="54.90167" lon="23.89212"/>
+      <trkpt lat="54.90132" lon="23.89195"/>
+      <trkpt lat="54.90117" lon="23.89207"/>
+      <trkpt lat="54.90094" lon="23.89236"/>
+      <trkpt lat="54.90048" lon="23.89253"/>
+      <trkpt lat="54.90026" lon="23.89275"/>
+      <trkpt lat="54.89972" lon="23.89258"/>
+      <trkpt lat="54.89913" lon="23.89262"/>
+      <trkpt lat="54.89886" lon="23.89278"/>
+      <trkpt lat="54.89871" lon="23.89306"/>
+      <trkpt lat="54.89861" lon="23.89336"/>
+      <trkpt lat="54.89847" lon="23.89421"/>
+      <trkpt lat="54.8983" lon="23.89574"/>
+      <trkpt lat="54.8982" lon="23.89609"/>
+      <trkpt lat="54.89823" lon="23.89643"/>
+      <trkpt lat="54.89796" lon="23.90021"/>
+      <trkpt lat="54.89794" lon="23.90181"/>
+      <trkpt lat="54.89798" lon="23.90201"/>
+      <trkpt lat="54.8985" lon="23.90354"/>
+      <trkpt lat="54.89926" lon="23.90552"/>
+      <trkpt lat="54.90072" lon="23.90951"/>
+      <trkpt lat="54.90077" lon="23.90979"/>
+      <trkpt lat="54.9007" lon="23.91291"/>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Osvaldas Rubavičius</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:06:18Z</time>
+  </metadata>
+  <trk>
+    <name>Draugystes parko ratukas</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/703753868">
+      <text>Draugystes parko ratukas</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.91609" lon="23.96907"/>
+      <trkpt lat="54.91582" lon="23.96895"/>
+      <trkpt lat="54.9156" lon="23.96912"/>
+      <trkpt lat="54.91551" lon="23.96924"/>
+      <trkpt lat="54.91547" lon="23.96954"/>
+      <trkpt lat="54.9155" lon="23.96976"/>
+      <trkpt lat="54.91558" lon="23.96993"/>
+      <trkpt lat="54.91527" lon="23.9702"/>
+      <trkpt lat="54.91445" lon="23.97045"/>
+      <trkpt lat="54.91374" lon="23.97111"/>
+      <trkpt lat="54.91362" lon="23.97131"/>
+      <trkpt lat="54.91333" lon="23.97181"/>
+      <trkpt lat="54.91327" lon="23.97195"/>
+      <trkpt lat="54.91325" lon="23.97214"/>
+      <trkpt lat="54.91329" lon="23.9723"/>
+      <trkpt lat="54.91349" lon="23.97272"/>
+      <trkpt lat="54.91361" lon="23.97283"/>
+      <trkpt lat="54.91417" lon="23.97253"/>
+      <trkpt lat="54.91419" lon="23.97262"/>
+      <trkpt lat="54.91424" lon="23.9728"/>
+      <trkpt lat="54.91585" lon="23.97259"/>
+      <trkpt lat="54.916" lon="23.97251"/>
+      <trkpt lat="54.91698" lon="23.97164"/>
+      <trkpt lat="54.91768" lon="23.97063"/>
+      <trkpt lat="54.91699" lon="23.96996"/>
+      <trkpt lat="54.91699" lon="23.96954"/>
+      <trkpt lat="54.91698" lon="23.96859"/>
+      <trkpt lat="54.91681" lon="23.96803"/>
+      <trkpt lat="54.91663" lon="23.9679"/>
+      <trkpt lat="54.91608" lon="23.96742"/>
+      <trkpt lat="54.91593" lon="23.96762"/>
+      <trkpt lat="54.916" lon="23.96785"/>
+      <trkpt lat="54.91602" lon="23.96849"/>
+      <trkpt lat="54.9161" lon="23.96907"/>
+    </trkseg>
+  </trk>
+</gpx>

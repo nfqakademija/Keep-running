@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Diana Škuratovaitė</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:01:03Z</time>
+  </metadata>
+  <trk>
+    <name>2 km</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/494104020">
+      <text>2 km</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.91707" lon="23.83356"/>
+      <trkpt lat="54.91626" lon="23.8351"/>
+      <trkpt lat="54.91615" lon="23.83523"/>
+      <trkpt lat="54.916" lon="23.83522"/>
+      <trkpt lat="54.91468" lon="23.83415"/>
+      <trkpt lat="54.91407" lon="23.8338"/>
+      <trkpt lat="54.91326" lon="23.83322"/>
+      <trkpt lat="54.91271" lon="23.83299"/>
+      <trkpt lat="54.91234" lon="23.833"/>
+      <trkpt lat="54.91222" lon="23.83307"/>
+      <trkpt lat="54.91195" lon="23.83303"/>
+      <trkpt lat="54.90852" lon="23.82993"/>
+      <trkpt lat="54.90824" lon="23.83179"/>
+      <trkpt lat="54.90811" lon="23.83315"/>
+      <trkpt lat="54.9081" lon="23.83366"/>
+      <trkpt lat="54.90827" lon="23.83665"/>
+      <trkpt lat="54.9085" lon="23.8397"/>
+      <trkpt lat="54.9086" lon="23.84046"/>
+      <trkpt lat="54.90873" lon="23.84094"/>
+      <trkpt lat="54.90876" lon="23.84099"/>
+      <trkpt lat="54.90846" lon="23.84182"/>
+      <trkpt lat="54.90802" lon="23.84383"/>
+      <trkpt lat="54.90772" lon="23.84606"/>
+      <trkpt lat="54.90766" lon="23.84672"/>
+    </trkseg>
+  </trk>
+</gpx>

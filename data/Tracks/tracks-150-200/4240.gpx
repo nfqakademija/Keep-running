@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Erniukas Berniukas</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T19:50:44Z</time>
+  </metadata>
+  <trk>
+    <name>Aplink savą 4.24km</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/357918413">
+      <text>Aplink savą 4.24km</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.91296" lon="23.94425"/>
+      <trkpt lat="54.91577" lon="23.95014"/>
+      <trkpt lat="54.9185" lon="23.95637"/>
+      <trkpt lat="54.9216" lon="23.96319"/>
+      <trkpt lat="54.9223" lon="23.96466"/>
+      <trkpt lat="54.92251" lon="23.96519"/>
+      <trkpt lat="54.9233" lon="23.96397"/>
+      <trkpt lat="54.92411" lon="23.96284"/>
+      <trkpt lat="54.91871" lon="23.95079"/>
+      <trkpt lat="54.91636" lon="23.94562"/>
+      <trkpt lat="54.91517" lon="23.94298"/>
+      <trkpt lat="54.91421" lon="23.94096"/>
+      <trkpt lat="54.91369" lon="23.93973"/>
+      <trkpt lat="54.91256" lon="23.94144"/>
+      <trkpt lat="54.912" lon="23.94225"/>
+      <trkpt lat="54.91297" lon="23.94428"/>
+    </trkseg>
+  </trk>
+</gpx>

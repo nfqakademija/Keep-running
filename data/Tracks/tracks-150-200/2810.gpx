@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Čia Markis</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T19:48:57Z</time>
+  </metadata>
+  <trk>
+    <name>Viljampole - Žemaičių - Karo muziejus #</name>
+    <cmt>Varnių tiltas &gt; Kapsų &gt; Žemaičių &gt; Savanoriai &gt; Laiptai žemyn &gt; BLC</cmt>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/405450749">
+      <text>Viljampole - Žemaičių - Karo muziejus #</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.91458" lon="23.90477"/>
+      <trkpt lat="54.91448" lon="23.90902"/>
+      <trkpt lat="54.91431" lon="23.91272"/>
+      <trkpt lat="54.91424" lon="23.91302"/>
+      <trkpt lat="54.91405" lon="23.91306"/>
+      <trkpt lat="54.91345" lon="23.91252"/>
+      <trkpt lat="54.91272" lon="23.91157"/>
+      <trkpt lat="54.91288" lon="23.91083"/>
+      <trkpt lat="54.91183" lon="23.90987"/>
+      <trkpt lat="54.91094" lon="23.90882"/>
+      <trkpt lat="54.90954" lon="23.90704"/>
+      <trkpt lat="54.90915" lon="23.9079"/>
+      <trkpt lat="54.90881" lon="23.90845"/>
+      <trkpt lat="54.90878" lon="23.90857"/>
+      <trkpt lat="54.90885" lon="23.90874"/>
+      <trkpt lat="54.90902" lon="23.9086"/>
+      <trkpt lat="54.9092" lon="23.90861"/>
+      <trkpt lat="54.90929" lon="23.90877"/>
+      <trkpt lat="54.90932" lon="23.9089"/>
+      <trkpt lat="54.9093" lon="23.90911"/>
+      <trkpt lat="54.90902" lon="23.91014"/>
+      <trkpt lat="54.90876" lon="23.90964"/>
+      <trkpt lat="54.90863" lon="23.90947"/>
+      <trkpt lat="54.90826" lon="23.90937"/>
+      <trkpt lat="54.90813" lon="23.90958"/>
+      <trkpt lat="54.90793" lon="23.90958"/>
+      <trkpt lat="54.90787" lon="23.90974"/>
+      <trkpt lat="54.9075" lon="23.91026"/>
+      <trkpt lat="54.90411" lon="23.91592"/>
+      <trkpt lat="54.90315" lon="23.91329"/>
+      <trkpt lat="54.90241" lon="23.91393"/>
+      <trkpt lat="54.9022" lon="23.91423"/>
+      <trkpt lat="54.90166" lon="23.91415"/>
+      <trkpt lat="54.90163" lon="23.91414"/>
+      <trkpt lat="54.9016" lon="23.91403"/>
+      <trkpt lat="54.90157" lon="23.91422"/>
+      <trkpt lat="54.90153" lon="23.91409"/>
+      <trkpt lat="54.90149" lon="23.91429"/>
+      <trkpt lat="54.90146" lon="23.91416"/>
+      <trkpt lat="54.90142" lon="23.91437"/>
+      <trkpt lat="54.90065" lon="23.91439"/>
+      <trkpt lat="54.90066" lon="23.91413"/>
+    </trkseg>
+  </trk>
+</gpx>

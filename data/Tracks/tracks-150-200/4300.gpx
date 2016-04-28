@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Čia Markis</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:04:32Z</time>
+  </metadata>
+  <trk>
+    <name>SAVAS - BLC / Karo muziejus</name>
+    <cmt>Savas (prekybos centras) - BLC (centras)</cmt>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/405447585">
+      <text>SAVAS - BLC / Karo muziejus</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.92411" lon="23.96292"/>
+      <trkpt lat="54.91832" lon="23.9499"/>
+      <trkpt lat="54.91796" lon="23.94917"/>
+      <trkpt lat="54.91517" lon="23.94298"/>
+      <trkpt lat="54.91421" lon="23.94096"/>
+      <trkpt lat="54.91369" lon="23.93973"/>
+      <trkpt lat="54.91193" lon="23.936"/>
+      <trkpt lat="54.9089" lon="23.92901"/>
+      <trkpt lat="54.90839" lon="23.92754"/>
+      <trkpt lat="54.9054" lon="23.9195"/>
+      <trkpt lat="54.90411" lon="23.91592"/>
+      <trkpt lat="54.90407" lon="23.91597"/>
+      <trkpt lat="54.90411" lon="23.91592"/>
+      <trkpt lat="54.90315" lon="23.91329"/>
+      <trkpt lat="54.90251" lon="23.91383"/>
+      <trkpt lat="54.9022" lon="23.91423"/>
+      <trkpt lat="54.90162" lon="23.91414"/>
+      <trkpt lat="54.9016" lon="23.91403"/>
+      <trkpt lat="54.90159" lon="23.91419"/>
+      <trkpt lat="54.90156" lon="23.91422"/>
+      <trkpt lat="54.90155" lon="23.9141"/>
+      <trkpt lat="54.90152" lon="23.9141"/>
+      <trkpt lat="54.90151" lon="23.91427"/>
+      <trkpt lat="54.90148" lon="23.91429"/>
+      <trkpt lat="54.90146" lon="23.91416"/>
+      <trkpt lat="54.90142" lon="23.91437"/>
+      <trkpt lat="54.90065" lon="23.91441"/>
+    </trkseg>
+  </trk>
+</gpx>

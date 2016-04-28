@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Paulius Zaleckis</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T19:52:04Z</time>
+  </metadata>
+  <trk>
+    <name>Kvartalas</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/313393870">
+      <text>Kvartalas</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.91103" lon="23.97942"/>
+      <trkpt lat="54.91101" lon="23.97961"/>
+      <trkpt lat="54.91088" lon="23.97973"/>
+      <trkpt lat="54.91063" lon="23.97973"/>
+      <trkpt lat="54.9103" lon="23.97969"/>
+      <trkpt lat="54.91001" lon="23.97964"/>
+      <trkpt lat="54.90991" lon="23.97955"/>
+      <trkpt lat="54.90985" lon="23.97936"/>
+      <trkpt lat="54.90986" lon="23.97904"/>
+      <trkpt lat="54.90993" lon="23.97881"/>
+      <trkpt lat="54.91021" lon="23.97873"/>
+      <trkpt lat="54.91073" lon="23.97879"/>
+      <trkpt lat="54.91092" lon="23.97885"/>
+      <trkpt lat="54.91102" lon="23.97906"/>
+      <trkpt lat="54.91105" lon="23.97931"/>
+      <trkpt lat="54.91132" lon="23.98021"/>
+      <trkpt lat="54.91131" lon="23.98126"/>
+      <trkpt lat="54.911" lon="23.98269"/>
+      <trkpt lat="54.91053" lon="23.98461"/>
+      <trkpt lat="54.90837" lon="23.99431"/>
+      <trkpt lat="54.90671" lon="24.00133"/>
+      <trkpt lat="54.90488" lon="24.00949"/>
+      <trkpt lat="54.90007" lon="24.00491"/>
+      <trkpt lat="54.89986" lon="24.00462"/>
+      <trkpt lat="54.89963" lon="24.00414"/>
+      <trkpt lat="54.89955" lon="24.00391"/>
+      <trkpt lat="54.8995" lon="24.00363"/>
+      <trkpt lat="54.89946" lon="24.00315"/>
+      <trkpt lat="54.89945" lon="24.00242"/>
+      <trkpt lat="54.89974" lon="24.00036"/>
+      <trkpt lat="54.90272" lon="23.98716"/>
+      <trkpt lat="54.90327" lon="23.98493"/>
+      <trkpt lat="54.90335" lon="23.98487"/>
+      <trkpt lat="54.90327" lon="23.98493"/>
+      <trkpt lat="54.90326" lon="23.98476"/>
+      <trkpt lat="54.90413" lon="23.98107"/>
+      <trkpt lat="54.90442" lon="23.9796"/>
+      <trkpt lat="54.90444" lon="23.97892"/>
+      <trkpt lat="54.9044" lon="23.97868"/>
+      <trkpt lat="54.90402" lon="23.97786"/>
+      <trkpt lat="54.9039" lon="23.97771"/>
+      <trkpt lat="54.90455" lon="23.97838"/>
+      <trkpt lat="54.90466" lon="23.9784"/>
+      <trkpt lat="54.90483" lon="23.97809"/>
+      <trkpt lat="54.9051" lon="23.97696"/>
+      <trkpt lat="54.90687" lon="23.97839"/>
+      <trkpt lat="54.90705" lon="23.97848"/>
+      <trkpt lat="54.90734" lon="23.97855"/>
+      <trkpt lat="54.90764" lon="23.97853"/>
+      <trkpt lat="54.90789" lon="23.97845"/>
+      <trkpt lat="54.90882" lon="23.97792"/>
+    </trkseg>
+  </trk>
+</gpx>

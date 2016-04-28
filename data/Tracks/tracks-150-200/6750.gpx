@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Nerijus Bernotaitis</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T19:50:08Z</time>
+  </metadata>
+  <trk>
+    <name>Nuokalnė</name>
+    <cmt>17:16 min</cmt>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/331986403">
+      <text>Nuokalnė</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.91084" lon="23.93743"/>
+      <trkpt lat="54.9119" lon="23.93636"/>
+      <trkpt lat="54.91294" lon="23.93151"/>
+      <trkpt lat="54.91254" lon="23.92146"/>
+      <trkpt lat="54.91414" lon="23.91318"/>
+      <trkpt lat="54.91276" lon="23.91099"/>
+      <trkpt lat="54.90916" lon="23.90696"/>
+      <trkpt lat="54.90312" lon="23.89614"/>
+      <trkpt lat="54.90321" lon="23.89589"/>
+      <trkpt lat="54.90721" lon="23.90288"/>
+      <trkpt lat="54.91165" lon="23.90949"/>
+      <trkpt lat="54.91451" lon="23.91159"/>
+      <trkpt lat="54.91442" lon="23.91292"/>
+      <trkpt lat="54.91301" lon="23.92172"/>
+      <trkpt lat="54.91323" lon="23.93159"/>
+      <trkpt lat="54.91187" lon="23.93674"/>
+      <trkpt lat="54.91158" lon="23.93756"/>
+      <trkpt lat="54.91109" lon="23.93743"/>
+    </trkseg>
+  </trk>
+</gpx>

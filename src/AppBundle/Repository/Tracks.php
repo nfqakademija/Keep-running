@@ -39,9 +39,16 @@ class Tracks
      *
      */
 
-    public function persistTrack()
+    public function persistTrack($trackPoints)
     {
-        $this->connection->insert();
+        $this->connection->insert('running_tracks',
+            array(
+                'trackStartPointLongtitude' =>'',
+                'trackStartPointLatitude' =>'',
+                'trackPoints'=> $trackPoints,
+                'trackDistance'=> 5000,
+                'trackLevelId'=> 1
+            ));
     }
 
 }

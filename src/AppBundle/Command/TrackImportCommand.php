@@ -43,7 +43,7 @@ class TrackImportCommand extends ContainerAwareCommand
             $pointsInJson = json_encode(['points' => $points]);
 
             // persist to mysql
-            $repository->persistTrack($pointsInJson);
+            $repository->persistTrack($pointsInJson, );
         }
     }
 

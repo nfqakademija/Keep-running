@@ -14,9 +14,15 @@ class Tracks
     /**
      * @return array
      */
-    public function getTracks()
+    public function getTracksByFilter($distance=NULL,$difficulty=NULL)
     {
-        return $this->connection->fetchAll('select * from running_tracks');
+
+        $sql='SELECT * FROM `running_tracks` WHERE TRUE';
+        if($distance)
+            $sql.=' AND `running_tracks`.`trackDistance` BETWEEN 0 AND '.$distance ;
+        if($difficulty)
+            $sql.=' AND `running_tracks`.`trackLevelId` = '.$difficulty;
+        return $this->connection->fetchAll($sql);
     }
 
     /**

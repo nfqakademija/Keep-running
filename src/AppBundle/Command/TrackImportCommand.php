@@ -41,9 +41,11 @@ class TrackImportCommand extends ContainerAwareCommand
             }
 
             $pointsInJson = json_encode(['points' => $points]);
+            $startLat= $points[0]['lat'];
+            $startLon =$points[0]['lon'];
 
             // persist to mysql
-            $repository->persistTrack($pointsInJson, );
+            $repository->persistTrack($pointsInJson, $startLat,$startLon);
         }
     }
 

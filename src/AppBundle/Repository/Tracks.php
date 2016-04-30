@@ -41,14 +41,19 @@ class Tracks
 
     public function persistTrack($trackPoints, $start1, $start2)
     {
+        $this->truncateRecords();
         $this->connection->insert('running_tracks',
             [
-                'trackStartPointLongtitude' =>$start1,
-                'trackStartPointLatitude' =>$start2,
-                'trackPoints'=> $trackPoints,
-                'trackDistance'=> 5000,
-                'trackLevelId'=> 1
+                'trackStartPointLongtitude' => $start1,
+                'trackStartPointLatitude' => $start2,
+                'trackPoints' => $trackPoints,
+                'trackDistance' => 5000,
+                'trackLevelId' => 1
             ]);
     }
 
+    private function truncateRecords()
+    {
+        $this->connection->query('truncate running_tracks;');
+    }
 }

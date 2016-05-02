@@ -55,16 +55,21 @@ class Tracks
      *
      */
 
-    public function persistTrack($trackPoints, $start1, $start2)
+    public function persistTrack($trackPoints, $start1, $start2,$distance,$difficulty)
     {
         $this->connection->insert('running_tracks',
             [
                 'trackStartPointLongtitude' =>$start1,
                 'trackStartPointLatitude' =>$start2,
                 'trackPoints'=> $trackPoints,
-                'trackDistance'=> 5000,
-                'trackLevelId'=> 1
+                'trackDistance'=> $distance,
+                'trackLevelId'=> $difficulty
             ]);
+    }
+
+    public function eraseTrack()
+    {
+        $this->connection->exec('TRUNCATE running_tracks');
     }
 
 }

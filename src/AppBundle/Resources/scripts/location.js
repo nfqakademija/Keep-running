@@ -21,7 +21,7 @@ function findPoints(data) {
 
     points.push(findPoint(data[0]));
 
-    while(i<pointLength){
+    while(i<pointLength-loopStep){
         points.push(findPoint(data[i]));
         i=i+loopStep;
     }
@@ -44,7 +44,7 @@ function groupPoints(wayPoints) {
             if(i==9){
                 groups.groupB.push(wayPoints[9]);
             }
-        }else{
+        }else if(i<19){
             groups.groupB.push(wayPoints[i]);
         }
         i++;
@@ -57,10 +57,11 @@ function getWayPoints() {
     var wayPointsFromAttribute= JSON.parse(attr.getAttribute('data-points'));
     wayPointsFromAttribute = wayPointsFromAttribute.points;
     var wayPoints = [];
+    console.log(wayPointsFromAttribute.length);
     var points = findPoints(wayPointsFromAttribute);
     var currentPosition = {lat: points[0]['lat'], lng: points[0]['lon']};
     var mapOptions ={
-        zoom: 14,
+        zoom: 15,
         center:currentPosition/* {lat: 54.89692, lng: 23.93794}*/,
         mapTypeControl: false,
         scrollwheel: false,
@@ -93,6 +94,9 @@ function getWayPoints() {
     }
 
     var groupedPoints = groupPoints(wayPoints);
+    var markerFirstPointLatitude=groupedPoints.groupA[0].location.lat();
+    var markerFirstPointLongtitude=groupedPoints.groupA[0].location.lng();
+    console.log(markerFirstPointLongtitude);
     plotTrack(groupedPoints.groupA);
     plotTrack(groupedPoints.groupB);
 }
@@ -104,7 +108,7 @@ function plotTrack(wayPoints) {
     var endPoint = wayPoints[wayPoints.length-1].location;
     var endPointLatitde = endPoint.lat();
     var endPointLongtitude = endPoint.lng();
-
+    console.log(wayPoints.length);
     wayPoints.shift();
     wayPoints.pop();
 
@@ -112,7 +116,7 @@ function plotTrack(wayPoints) {
         origin: new google.maps.LatLng(startPointLatitde,startPointLongtitude),
         destination: new google.maps.LatLng(endPointLatitde,endPointLongtitude),
         waypoints: wayPoints,
-        optimizeWaypoints: false,
+        optimizeWaypoints: true,
         travelMode: google.maps.TravelMode.WALKING
     };
 
@@ -122,7 +126,7 @@ function plotTrack(wayPoints) {
     directionsService.push(new google.maps.DirectionsService());
     directionsDisplay.push(new google.maps.DirectionsRenderer({
         preserveViewport: true,
-        suppressMarkers: true
+        suppressMarkers: false
     }));
 
     var instance = directionsService.length - 1;

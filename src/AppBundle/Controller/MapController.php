@@ -19,6 +19,7 @@ class MapController extends Controller
         $trackId=$tracksAfterFilter[$randomTrackNumber]['trackId'];
         $track=$repository->getTrackById($trackId);
         $points = $track[0]['trackPoints'];
+        echo $trackId;
         return $this->render('AppBundle:Map:index.html.twig', [
             'points' => $points,
         ]);

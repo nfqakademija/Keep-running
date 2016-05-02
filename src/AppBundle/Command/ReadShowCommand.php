@@ -26,7 +26,7 @@ class ReadShowCommand extends ContainerAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $dir    = './src/AppBundle/Controller';
+        $dir    = './data/Tracks';
         $files= scandir($dir);
         $output->writeln($files);
     }

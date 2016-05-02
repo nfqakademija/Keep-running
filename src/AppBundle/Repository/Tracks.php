@@ -14,6 +14,15 @@ class Tracks
     /**
      * @return array
      */
+    public function getMaxDistance()
+    {
+        $sql = 'SELECT MAX(`running_tracks`.`trackDistance`) FROM `running_tracks` ';
+        return $this->connection->fetchAll($sql);
+    }
+
+    /**
+     * @return array
+     */
     public function getTracksByFilter($distance = null, $difficulty = null)
     {
         $sql = 'SELECT `running_tracks`.`trackId` FROM `running_tracks` WHERE TRUE';

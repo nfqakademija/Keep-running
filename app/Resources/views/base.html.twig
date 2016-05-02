@@ -7,8 +7,10 @@
     {#<link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico')}}">#}
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     {% endblock %}
     {% block canonical_meta %}{% endblock %}
+
 </head>
 <body>
 {% block container %}
@@ -21,9 +23,7 @@
 {% include "::inc/footer.html.twig" %}
 {% endblock %}
 {% block javascripts %}
-
     <!-- <script src="{{ asset('js/script.js') }}"></script> -->
-
 {% endblock %}
 </body>
 </html>

@@ -27,7 +27,9 @@ class Tracks
     {
         $sql = 'SELECT `running_tracks`.`trackId` FROM `running_tracks` WHERE TRUE';
         if ($distance) {
-            $sql .= ' AND `running_tracks`.`trackDistance` BETWEEN 0 AND ' . $distance;
+            $distanceFrom=$distance['distanceFrom'];
+            $distanceTo=$distance['distanceTo'];
+            $sql .= ' AND `running_tracks`.`trackDistance` BETWEEN '.$distanceFrom.' AND ' . $distanceTo;
         }
         if ($difficulty) {
             $sql .= ' AND `running_tracks`.`trackLevelId` = ' . $difficulty;

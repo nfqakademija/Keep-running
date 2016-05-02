@@ -13,8 +13,10 @@ class HomeController extends Controller
      */
     public function indexAction()
     {
+        $repository = $this->get('app_bundle.repository.trackslevels');
+        $trackLevels = $repository->getLevels();
         return $this->render('AppBundle:Home:index.html.twig', array(
-            // ...
+            'tracks_levels' => $trackLevels
         ));
     }
 }

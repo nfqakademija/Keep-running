@@ -36,9 +36,9 @@
                     </div>
                     <div class="form-group">
                         Sunkumas:
-                        <input type="radio" name="difficulty" value="1"> Lengvas
-                        <input type="radio" name="difficulty" value="2"> Normalus
-                        <input type="radio" name="difficulty" value="3"> Sunkus
+                        {% for level in tracks_levels %}
+                            <input type="radio" name="difficulty" value="{{ level.levelId }}"> {{ level.levelName }}
+                        {% endfor %}
                     </div>
                     <div class="form-group">
                         <button>Generuoti trasą</button>

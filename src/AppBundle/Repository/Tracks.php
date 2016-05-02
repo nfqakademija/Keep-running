@@ -14,24 +14,28 @@ class Tracks
     /**
      * @return array
      */
-    public function getTracksByFilter($distance=NULL,$difficulty=NULL)
+    public function getTracksByFilter($distance = null, $difficulty = null)
     {
-        $sql='SELECT `running_tracks`.`trackId` FROM `running_tracks` WHERE TRUE';
-        if($distance)
-            $sql.=' AND `running_tracks`.`trackDistance` BETWEEN 0 AND '.$distance ;
-        if($difficulty)
-            $sql.=' AND `running_tracks`.`trackLevelId` = '.$difficulty;
+        $sql = 'SELECT `running_tracks`.`trackId` FROM `running_tracks` WHERE TRUE';
+        if ($distance) {
+            $sql .= ' AND `running_tracks`.`trackDistance` BETWEEN 0 AND ' . $distance;
+        }
+        if ($difficulty) {
+            $sql .= ' AND `running_tracks`.`trackLevelId` = ' . $difficulty;
+        }
         return $this->connection->fetchAll($sql);
     }
+
     /**
      * @return array
      */
     public function getTrackById($trackId)
     {
-        $sql='SELECT `running_tracks`.`trackPoints`,`running_tracks`.`trackDistance`FROM `running_tracks` ';
-        if($trackId)
-            $sql.= 'WHERE `running_tracks`.`trackId`='.(integer)$trackId;
-        $sql.=' LIMIT 1';
+        $sql = 'SELECT `running_tracks`.`trackPoints`,`running_tracks`.`trackDistance`FROM `running_tracks` ';
+        if ($trackId) {
+            $sql .= 'WHERE `running_tracks`.`trackId`=' . (integer)$trackId;
+        }
+        $sql .= ' LIMIT 1';
         return $this->connection->fetchAll($sql);
     }
 
@@ -55,15 +59,15 @@ class Tracks
      *
      */
 
-    public function persistTrack($trackPoints, $start1, $start2,$distance,$difficulty)
+    public function persistTrack($trackPoints, $start1, $start2, $distance, $difficulty)
     {
         $this->connection->insert('running_tracks',
             [
-                'trackStartPointLongtitude' =>$start1,
-                'trackStartPointLatitude' =>$start2,
-                'trackPoints'=> $trackPoints,
-                'trackDistance'=> $distance,
-                'trackLevelId'=> $difficulty
+                'trackStartPointLongtitude' => $start1,
+                'trackStartPointLatitude' => $start2,
+                'trackPoints' => $trackPoints,
+                'trackDistance' => $distance,
+                'trackLevelId' => $difficulty
             ]);
     }
 

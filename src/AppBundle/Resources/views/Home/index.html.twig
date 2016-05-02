@@ -2,6 +2,7 @@
 
 {% block title %}Home page - {{ parent() }}{% endblock %}
 
+
 {% block body %}
 
     <header id="starting-page">
@@ -32,7 +33,14 @@
                 <form action="{{ path('map.index') }}">
                     <div class="form-group">
                         Trasos ilgis:
-                        <input type="range" name="distance" min="1" max="20"> <span>10 km</span>
+                        <span><input id="distance" type="text" readonly=""> km</span>
+                        <input id="distance_from" type="hidden"  name="distance_from">
+                        <input id="distance_to" type="hidden"  name="distance_to">
+                        <div id="slider-range-min2" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div>
+                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
+                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span>
+                        </div>
                     </div>
                     <div class="form-group">
                         Sunkumas:
@@ -65,4 +73,26 @@
         </div>
     </footer>
 
+{% endblock %}
+
+{% block javascripts %}
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#slider-range-min2").slider({
+                range: true,
+                values: [3, 18],
+                min: 2,
+                max: 22,
+                slide: function( event, ui ) {
+                    $( "#distance" ).val( ui.values[0] + " - " + ui.values[1] );
+                    $( "#distance_from" ).val(ui.values[0]);
+                    $( "#distance_to" ).val(ui.values[1]);
+                }
+            });
+            $( "#distance" ).val( $( "#slider-range-min2" ).slider( "values", 0 ) +
+                    " - " + $( "#slider-range-min2" ).slider( "values", 1 ) );
+        });
+    </script>
 {% endblock %}

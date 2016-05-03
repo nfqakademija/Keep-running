@@ -141,15 +141,32 @@ header#starting-page {
 
     #filters-section {
         h2 {
-            margin: 0.5em;
+            color: white;
+            padding: 0.3em;
+            margin: 0;
+            background-color: orange;
+        }
+
+        .filters-input {
+            padding: 2em 3em;
+            height: 3.5em;
         }
 
         .form-group {
             vertical-align: top;
-            padding: 0.5em;
+            margin: 2%;
             font-size: 1.2em;
             display: inline-block;
-            width: 45%;
+            width: 40%;
+            background-color: #f8f8f8;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        #difficulties {
+            font-size: 1.2em;
         }
 
         button {
@@ -160,6 +177,7 @@ header#starting-page {
             border: none;
             color: white;
             transition: 0.5s all;
+            cursor: pointer;
         }
 
         button:hover { background-color: #2C3E50; }

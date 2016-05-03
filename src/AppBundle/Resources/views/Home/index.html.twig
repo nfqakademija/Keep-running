@@ -24,31 +24,29 @@
                 Su Keep Running kiekvieną kartą yra generuojama vis kitokia bėgimo trasa, kuri prasideda nuo
                 tos vietos kur esate.
             </p>
-            <a href="#filters">Pradėti</a>
+            <a href="#filters-section">Pradėti</a>
         </div>
     </header>
 
     <div id="main-page-sections">
-        <section id="filters">
+        <section id="filters-section">
             <div class="container">
                 <h1>Filtrai</h1>
-                <form action="{{ path('map.index') }}">
+                <form action="{{ path('map.index') }}" id="filters-form">
                     <div class="form-group">
-                        Trasos ilgis:
-                        <span><input id="distance" type="text" readonly=""> km</span>
+                        <h2>Trasos ilgis?</h2>
+                        <span style="display: none"><input id="distance" type="text" readonly=""> km</span>
                         <input id="distance_from" type="hidden"  name="distance_from">
                         <input id="distance_to" type="hidden"  name="distance_to">
                         <div id="distance_slider_range"></div>
                     </div>
                     <div class="form-group">
-                        Sunkumas:
+                        <h2>Sunkumas?</h2>
                         {% for level in tracks_levels %}
                             <input type="radio" name="difficulty" value="{{ level.levelId }}"> {{ level.levelName }}
                         {% endfor %}
                     </div>
-                    <div class="form-group">
-                        <button>Generuoti trasą</button>
-                    </div>
+                    <button>Generuoti trasą</button>
                 </form>
             </div>
         </section>

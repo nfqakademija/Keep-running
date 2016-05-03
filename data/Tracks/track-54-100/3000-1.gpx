@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Laimis Griškūnas</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-05-03T18:36:25Z</time>
+  </metadata>
+  <trk>
+    <name>Rytine mankšta 2</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/55551869">
+      <text>Rytine mankšta 2</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.924509332714145" lon="23.943800926208496"/>
+      <trkpt lat="54.923054276332046" lon="23.945560455322266"/>
+      <trkpt lat="54.9217718101288" lon="23.947341442108154"/>
+      <trkpt lat="54.91900327016198" lon="23.951075077056885"/>
+      <trkpt lat="54.92079143579998" lon="23.95516276359558"/>
+      <trkpt lat="54.922900135920884" lon="23.95989418029785"/>
+      <trkpt lat="54.924090084577216" lon="23.96242618560791"/>
+      <trkpt lat="54.92429970919178" lon="23.962265253067017"/>
+      <trkpt lat="54.925279998039436" lon="23.960108757019043"/>
+      <trkpt lat="54.92581020721086" lon="23.95889639854431"/>
+      <trkpt lat="54.926032153161295" lon="23.95793080329895"/>
+      <trkpt lat="54.92619244669733" lon="23.956578969955444"/>
+      <trkpt lat="54.92626642811392" lon="23.954519033432007"/>
+      <trkpt lat="54.926278758336785" lon="23.953092098236084"/>
+      <trkpt lat="54.92621094206424" lon="23.951493501663208"/>
+      <trkpt lat="54.926038318309125" lon="23.950098752975464"/>
+      <trkpt lat="54.92574855534065" lon="23.948628902435303"/>
+      <trkpt lat="54.92531698960373" lon="23.946826457977295"/>
+      <trkpt lat="54.9247374511886" lon="23.94441246986389"/>
+      <trkpt lat="54.92458331722595" lon="23.943800926208496"/>
+    </trkseg>
+  </trk>
+</gpx>

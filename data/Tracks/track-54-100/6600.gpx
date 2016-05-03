@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Vytenis Šmigelskas</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-05-03T18:34:47Z</time>
+  </metadata>
+  <trk>
+    <name>pav fake</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/177225762">
+      <text>pav fake</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.86514" lon="23.91466"/>
+      <trkpt lat="54.86512" lon="23.91073"/>
+      <trkpt lat="54.86503" lon="23.90802"/>
+      <trkpt lat="54.86474" lon="23.90474"/>
+      <trkpt lat="54.86477" lon="23.90458"/>
+      <trkpt lat="54.86545" lon="23.90319"/>
+      <trkpt lat="54.8666" lon="23.90107"/>
+      <trkpt lat="54.86662" lon="23.90091"/>
+      <trkpt lat="54.86302" lon="23.89739"/>
+      <trkpt lat="54.86294" lon="23.89727"/>
+      <trkpt lat="54.86704" lon="23.88991"/>
+      <trkpt lat="54.86717" lon="23.88952"/>
+      <trkpt lat="54.86733" lon="23.88845"/>
+      <trkpt lat="54.86759" lon="23.88854"/>
+      <trkpt lat="54.87482" lon="23.89123"/>
+      <trkpt lat="54.87544" lon="23.9024"/>
+      <trkpt lat="54.87542" lon="23.90381"/>
+      <trkpt lat="54.87508" lon="23.91005"/>
+      <trkpt lat="54.87494" lon="23.91187"/>
+      <trkpt lat="54.87482" lon="23.91263"/>
+      <trkpt lat="54.87461" lon="23.91359"/>
+      <trkpt lat="54.87438" lon="23.91445"/>
+      <trkpt lat="54.87416" lon="23.91549"/>
+      <trkpt lat="54.87408" lon="23.91603"/>
+      <trkpt lat="54.87404" lon="23.91673"/>
+      <trkpt lat="54.87407" lon="23.91876"/>
+      <trkpt lat="54.87374" lon="23.91881"/>
+      <trkpt lat="54.87358" lon="23.91888"/>
+      <trkpt lat="54.87328" lon="23.92039"/>
+      <trkpt lat="54.8732" lon="23.92056"/>
+      <trkpt lat="54.87312" lon="23.92057"/>
+      <trkpt lat="54.87293" lon="23.92045"/>
+      <trkpt lat="54.87221" lon="23.91993"/>
+      <trkpt lat="54.87019" lon="23.9186"/>
+      <trkpt lat="54.86944" lon="23.91795"/>
+      <trkpt lat="54.86948" lon="23.91787"/>
+      <trkpt lat="54.87026" lon="23.91464"/>
+      <trkpt lat="54.87022" lon="23.91462"/>
+      <trkpt lat="54.86899" lon="23.91375"/>
+      <trkpt lat="54.86869" lon="23.91348"/>
+      <trkpt lat="54.86857" lon="23.91331"/>
+      <trkpt lat="54.86838" lon="23.91291"/>
+      <trkpt lat="54.86775" lon="23.91147"/>
+      <trkpt lat="54.86743" lon="23.91112"/>
+      <trkpt lat="54.86719" lon="23.91103"/>
+      <trkpt lat="54.86509" lon="23.91076"/>
+      <trkpt lat="54.86509" lon="23.91473"/>
+    </trkseg>
+  </trk>
+</gpx>

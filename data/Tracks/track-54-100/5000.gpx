@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Harry Hazza</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-05-03T17:34:04Z</time>
+  </metadata>
+  <trk>
+    <name>Barsausko iki AzuoZoo</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/267729829">
+      <text>Barsausko iki AzuoZoo</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.89951" lon="23.96303"/>
+      <trkpt lat="54.90672" lon="23.95607"/>
+      <trkpt lat="54.90731" lon="23.95462"/>
+      <trkpt lat="54.90775" lon="23.95324"/>
+      <trkpt lat="54.90477" lon="23.94884"/>
+      <trkpt lat="54.9045" lon="23.94928"/>
+      <trkpt lat="54.90438" lon="23.94937"/>
+      <trkpt lat="54.90427" lon="23.94939"/>
+      <trkpt lat="54.90414" lon="23.9493"/>
+      <trkpt lat="54.90218" lon="23.94706"/>
+      <trkpt lat="54.9019" lon="23.94758"/>
+      <trkpt lat="54.90146" lon="23.94785"/>
+      <trkpt lat="54.9006" lon="23.94801"/>
+      <trkpt lat="54.89991" lon="23.94773"/>
+      <trkpt lat="54.89926" lon="23.94686"/>
+      <trkpt lat="54.89904" lon="23.94623"/>
+      <trkpt lat="54.89889" lon="23.94558"/>
+      <trkpt lat="54.89885" lon="23.94489"/>
+      <trkpt lat="54.89887" lon="23.94423"/>
+      <trkpt lat="54.89916" lon="23.94331"/>
+      <trkpt lat="54.89738" lon="23.94099"/>
+      <trkpt lat="54.89663" lon="23.93985"/>
+      <trkpt lat="54.8959" lon="23.93779"/>
+      <trkpt lat="54.89587" lon="23.9367"/>
+      <trkpt lat="54.89586" lon="23.93543"/>
+      <trkpt lat="54.8966" lon="23.93419"/>
+      <trkpt lat="54.897" lon="23.93351"/>
+      <trkpt lat="54.89739" lon="23.93291"/>
+      <trkpt lat="54.89862" lon="23.93204"/>
+      <trkpt lat="54.89957" lon="23.93212"/>
+      <trkpt lat="54.9007" lon="23.93175"/>
+      <trkpt lat="54.90415" lon="23.94931"/>
+      <trkpt lat="54.90406" lon="23.94936"/>
+    </trkseg>
+  </trk>
+</gpx>

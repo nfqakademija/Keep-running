@@ -20,12 +20,10 @@ section {
     padding: 2em 0 5em;
 }
 
-body section:not(#starting-page) {
+body div#map-page {
     header {
         overflow: auto;
         height: 10vh;
-        width: 1140px;
-        margin: 0 auto;
 
         h1 {
             float: left;
@@ -59,6 +57,23 @@ body section:not(#starting-page) {
         ul li {
             display: inline;
         }
+    }
+
+    #filters-and-info,
+    #map {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+    }
+
+    #filters-and-info {
+        width: 15vw;
+        padding: 1em;
+    }
+
+    #map {
+        width: 80vw;
+        height: 90vh;
     }
 }
 
@@ -211,12 +226,6 @@ header#starting-page {
             margin: 20px;
             color: orange;
         }
-    }
-}
-
-#map-page {
-    #map {
-        height: 90vh;
     }
 }
 

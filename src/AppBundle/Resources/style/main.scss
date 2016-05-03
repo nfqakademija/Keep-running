@@ -1,7 +1,8 @@
 //@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&subset=latin,latin-ext);
 
 body {
-    font-family: sans-serif;
+    font-family: 'Hind', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -59,40 +60,15 @@ body section:not(#starting-page) {
             display: inline;
         }
     }
-
-    #content {
-        background-color: #f8f8f8;
-
-        #heading {
-            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/pexels-photo.jpg');
-            background-position: center 30%;
-        }
-
-        h2 {
-            padding: 1.5em 2em;
-            margin: 0 auto;
-            color: white;
-            text-shadow: 0 0 10px rgba(0,0,0,0.5);
-            max-width: 1140px;
-        }
-
-        #text {
-            width: 1140px;
-            margin: 0 auto;
-            box-shadow: 0 0 5px rgba(0,0,0,0.2);
-            background-color: white;
-            padding: 2em;
-        }
-    }
 }
 
-#starting-page {
+header#starting-page {
     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("../images/pexels-photo.jpg");
     height: 100vh;
     position: relative;
     text-align: center;
     color: white;
-    text-shadow: 0 0 10px black;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 
     nav {
         text-align: right;
@@ -133,25 +109,24 @@ body section:not(#starting-page) {
         }
 
         p {
-            line-height: 22px;
-            font-size: 1.05em;
+            line-height: 35px;
+            font-size: 1.7em;
         }
 
         a {
+            text-shadow: none;
             display: inline-block;
             color: white;
             text-decoration: none;
-            margin-top: 3em;
+            margin-top: 2.5em;
             font-size: 1.5em;
-            border: 2px solid white;
-            padding: 0.8em 2em;
-            border-radius: 1em;
-            background-color: rgba(255,255,255,0.2);
+            padding: 0.3em 1.8em;
+            background-color: #F1C40F;
             transition: 0.5s all;
         }
 
         a:hover {
-            background-color: rgba(255,255,255,0.3);
+            background-color: orange;
         }
     }
 }
@@ -159,10 +134,39 @@ body section:not(#starting-page) {
 #main-page-sections {
     text-align: center;
 
+    h1 {
+        font-size: 3em;
+    }
+
     #filters {
         .form-group {
             padding: 0.5em;
             font-size: 1.2em;
+        }
+    }
+
+    section:nth-child(even) { background-color: #f8f8f8; }
+
+    #uniqueness {
+        #bubbles article {
+            width: 33%;
+            margin: 0;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 1.2em;
+        }
+
+        p {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            text-align: center;
+        }
+
+        .fa {
+            font-size: 3em;
+            margin: 20px;
+            color: orange;
         }
     }
 }
@@ -174,7 +178,7 @@ body section:not(#starting-page) {
 }
 
 footer {
-    text-align: right;
+    text-align: center;
     padding: 1em;
     background-color: #191919;
     color: #f8f8f8;

@@ -64,6 +64,7 @@ body section:not(#starting-page) {
 
 header#starting-page {
     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("../images/pexels-photo.jpg");
+    background-attachment: fixed;
     height: 100vh;
     position: relative;
     text-align: center;
@@ -148,12 +149,17 @@ header#starting-page {
     section:nth-child(even) { background-color: #f8f8f8; }
 
     #uniqueness {
+        background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/pexels-photo-60230.jpeg");
+        background-attachment: fixed;
+
         #bubbles article {
-            width: 33%;
-            margin: 0;
+            width: 30%;
+            margin: 1%;
             display: inline-block;
             vertical-align: top;
             font-size: 1.2em;
+            height: 220px;
+            background-color: rgba(255,255,255,0.5);
         }
 
         p {

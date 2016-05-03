@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Donatas Perkunas</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:49:27Z</time>
+  </metadata>
+  <trk>
+    <name>Perkunas bega iki Didziojo Azuolyno</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/215080641">
+      <text>Perkunas bega iki Didziojo Azuolyno</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.90048" lon="23.93309"/>
+      <trkpt lat="54.90069" lon="23.93206"/>
+      <trkpt lat="54.90076" lon="23.93187"/>
+      <trkpt lat="54.90072" lon="23.93164"/>
+      <trkpt lat="54.90081" lon="23.93159"/>
+      <trkpt lat="54.90057" lon="23.93046"/>
+      <trkpt lat="54.89997" lon="23.92752"/>
+      <trkpt lat="54.90135" lon="23.92626"/>
+      <trkpt lat="54.90141" lon="23.92617"/>
+      <trkpt lat="54.90156" lon="23.92566"/>
+      <trkpt lat="54.90217" lon="23.92642"/>
+      <trkpt lat="54.9023" lon="23.92649"/>
+      <trkpt lat="54.9024" lon="23.92638"/>
+      <trkpt lat="54.90251" lon="23.92599"/>
+      <trkpt lat="54.90257" lon="23.92586"/>
+      <trkpt lat="54.90269" lon="23.92582"/>
+      <trkpt lat="54.90274" lon="23.92563"/>
+      <trkpt lat="54.90378" lon="23.92621"/>
+      <trkpt lat="54.90402" lon="23.92629"/>
+      <trkpt lat="54.90458" lon="23.92575"/>
+      <trkpt lat="54.90512" lon="23.92718"/>
+      <trkpt lat="54.90653" lon="23.9256"/>
+    </trkseg>
+  </trk>
+</gpx>

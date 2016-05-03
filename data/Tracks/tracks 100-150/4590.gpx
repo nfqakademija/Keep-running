@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Mantas Gricius</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:59:04Z</time>
+  </metadata>
+  <trk>
+    <name>Kauniečių bėgimas už blaivybę</name>
+    <cmt>Kiekvieną pirmąjį mėnesio penktadienį bėgame už laisvą, blaivią ir sveiką Lietuvą.&#xd;
+Startas ir finišas - prie Motiejaus Valančiaus paminklo Rotušės aikštėje.&#xd;
+Trasa:&#xd;
+Rotušės aikštė, Vilniaus g., Laisvės al. iki Soboro ir atgal.&#xd;
+(Atstumas: ~4.5km)&#xd;
+arba sutrumpintas variantas:&#xd;
+Rotušės aikštė, Vilniaus g., Laisvės al. iki fontano ir atgal.&#xd;
+(Atstumas: ~3.0km)&#xd;
+Bet kokia žalia atributika pageidautina!</cmt>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/504751855">
+      <text>Kauniečių bėgimas už blaivybę</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.89739" lon="23.88568"/>
+      <trkpt lat="54.89734" lon="23.88583"/>
+      <trkpt lat="54.8974" lon="23.88597"/>
+      <trkpt lat="54.89659" lon="23.88999"/>
+      <trkpt lat="54.89652" lon="23.89069"/>
+      <trkpt lat="54.89649" lon="23.89295"/>
+      <trkpt lat="54.89662" lon="23.89467"/>
+      <trkpt lat="54.89665" lon="23.89569"/>
+      <trkpt lat="54.89669" lon="23.89614"/>
+      <trkpt lat="54.89697" lon="23.89795"/>
+      <trkpt lat="54.89716" lon="23.89855"/>
+      <trkpt lat="54.89783" lon="23.9002"/>
+      <trkpt lat="54.89784" lon="23.90029"/>
+      <trkpt lat="54.89773" lon="23.90529"/>
+      <trkpt lat="54.89757" lon="23.90967"/>
+      <trkpt lat="54.89707" lon="23.92065"/>
+      <trkpt lat="54.89757" lon="23.90967"/>
+      <trkpt lat="54.89773" lon="23.90529"/>
+      <trkpt lat="54.89784" lon="23.90028"/>
+      <trkpt lat="54.89716" lon="23.89855"/>
+      <trkpt lat="54.89697" lon="23.89795"/>
+      <trkpt lat="54.89669" lon="23.89614"/>
+      <trkpt lat="54.89665" lon="23.89569"/>
+      <trkpt lat="54.89662" lon="23.89467"/>
+      <trkpt lat="54.89649" lon="23.89295"/>
+      <trkpt lat="54.89653" lon="23.89119"/>
+      <trkpt lat="54.89651" lon="23.89079"/>
+      <trkpt lat="54.89659" lon="23.88999"/>
+      <trkpt lat="54.89682" lon="23.88895"/>
+      <trkpt lat="54.8974" lon="23.88597"/>
+      <trkpt lat="54.89734" lon="23.88583"/>
+      <trkpt lat="54.89738" lon="23.88565"/>
+    </trkseg>
+  </trk>
+</gpx>

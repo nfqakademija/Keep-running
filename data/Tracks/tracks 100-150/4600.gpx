@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Mantas Gricius</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:59:23Z</time>
+  </metadata>
+  <trk>
+    <name>Kauniečių bėgimas už blaivybę</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/512449493">
+      <text>Kauniečių bėgimas už blaivybę</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.89739" lon="23.88567999999998"/>
+      <trkpt lat="54.89734" lon="23.88582999999994"/>
+      <trkpt lat="54.8974" lon="23.885970000000043"/>
+      <trkpt lat="54.89659" lon="23.88999000000001"/>
+      <trkpt lat="54.89652" lon="23.89068999999995"/>
+      <trkpt lat="54.89649" lon="23.892949999999928"/>
+      <trkpt lat="54.89662" lon="23.89467000000002"/>
+      <trkpt lat="54.89665" lon="23.89569000000006"/>
+      <trkpt lat="54.89669" lon="23.89614000000006"/>
+      <trkpt lat="54.89697" lon="23.897950000000037"/>
+      <trkpt lat="54.89716" lon="23.89855"/>
+      <trkpt lat="54.89783" lon="23.90020000000004"/>
+      <trkpt lat="54.89784" lon="23.90029000000004"/>
+      <trkpt lat="54.89773" lon="23.905290000000036"/>
+      <trkpt lat="54.89757" lon="23.909670000000006"/>
+      <trkpt lat="54.89707" lon="23.920650000000023"/>
+      <trkpt lat="54.89757" lon="23.909670000000006"/>
+      <trkpt lat="54.89773" lon="23.905290000000036"/>
+      <trkpt lat="54.89784" lon="23.900280000000066"/>
+      <trkpt lat="54.89716" lon="23.89855"/>
+      <trkpt lat="54.89697" lon="23.897950000000037"/>
+      <trkpt lat="54.89669" lon="23.89614000000006"/>
+      <trkpt lat="54.89665" lon="23.89569000000006"/>
+      <trkpt lat="54.89662" lon="23.89467000000002"/>
+      <trkpt lat="54.89649" lon="23.892949999999928"/>
+      <trkpt lat="54.89653" lon="23.89119000000005"/>
+      <trkpt lat="54.89651" lon="23.890790000000038"/>
+      <trkpt lat="54.89659" lon="23.88999000000001"/>
+      <trkpt lat="54.89682" lon="23.888950000000023"/>
+      <trkpt lat="54.8974" lon="23.885970000000043"/>
+      <trkpt lat="54.89734" lon="23.88582999999994"/>
+      <trkpt lat="54.89738" lon="23.88564999999994"/>
+    </trkseg>
+  </trk>
+</gpx>

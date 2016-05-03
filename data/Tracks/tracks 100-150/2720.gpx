@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Donatas Perkunas</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:42:10Z</time>
+  </metadata>
+  <trk>
+    <name>Perkuno Standartinis Didziajame Azuolyne</name>
+    <cmt>Ratai paciam azuolyne.</cmt>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/215080015">
+      <text>Perkuno Standartinis Didziajame Azuolyne</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.89932" lon="23.93946"/>
+      <trkpt lat="54.89901" lon="23.93945"/>
+      <trkpt lat="54.89853" lon="23.93927"/>
+      <trkpt lat="54.89833" lon="23.93944"/>
+      <trkpt lat="54.89805" lon="23.93999"/>
+      <trkpt lat="54.89786" lon="23.93993"/>
+      <trkpt lat="54.89734" lon="23.93949"/>
+      <trkpt lat="54.89636" lon="23.93908"/>
+      <trkpt lat="54.89591" lon="23.93778"/>
+      <trkpt lat="54.89588" lon="23.93777"/>
+      <trkpt lat="54.89588" lon="23.93759"/>
+      <trkpt lat="54.89587" lon="23.93818"/>
+      <trkpt lat="54.89569" lon="23.93916"/>
+      <trkpt lat="54.89567" lon="23.94002"/>
+      <trkpt lat="54.89572" lon="23.94121"/>
+      <trkpt lat="54.89587" lon="23.94191"/>
+      <trkpt lat="54.89606" lon="23.94242"/>
+      <trkpt lat="54.89612" lon="23.94254"/>
+      <trkpt lat="54.89621" lon="23.94262"/>
+      <trkpt lat="54.89629" lon="23.94267"/>
+      <trkpt lat="54.89641" lon="23.94266"/>
+      <trkpt lat="54.89669" lon="23.9425"/>
+      <trkpt lat="54.89686" lon="23.94222"/>
+      <trkpt lat="54.89736" lon="23.94096"/>
+      <trkpt lat="54.89775" lon="23.94153"/>
+      <trkpt lat="54.89736" lon="23.94254"/>
+      <trkpt lat="54.89703" lon="23.94329"/>
+      <trkpt lat="54.89697" lon="23.94356"/>
+      <trkpt lat="54.89696" lon="23.94377"/>
+      <trkpt lat="54.89698" lon="23.94419"/>
+      <trkpt lat="54.89677" lon="23.94552"/>
+      <trkpt lat="54.89627" lon="23.9465"/>
+      <trkpt lat="54.89623" lon="23.94669"/>
+      <trkpt lat="54.89622" lon="23.9472"/>
+      <trkpt lat="54.89618" lon="23.94746"/>
+      <trkpt lat="54.89587" lon="23.94822"/>
+      <trkpt lat="54.89616" lon="23.94753"/>
+      <trkpt lat="54.89622" lon="23.94712"/>
+      <trkpt lat="54.89623" lon="23.94663"/>
+      <trkpt lat="54.89644" lon="23.94612"/>
+      <trkpt lat="54.89667" lon="23.94576"/>
+      <trkpt lat="54.89677" lon="23.94552"/>
+      <trkpt lat="54.89803" lon="23.94379"/>
+      <trkpt lat="54.89858" lon="23.94252"/>
+      <trkpt lat="54.89897" lon="23.9429"/>
+      <trkpt lat="54.89918" lon="23.94332"/>
+      <trkpt lat="54.89968" lon="23.94401"/>
+      <trkpt lat="54.90069" lon="23.94512"/>
+      <trkpt lat="54.90062" lon="23.94502"/>
+      <trkpt lat="54.90006" lon="23.9435"/>
+      <trkpt lat="54.89962" lon="23.94201"/>
+      <trkpt lat="54.89932" lon="23.94002"/>
+      <trkpt lat="54.8993" lon="23.9395"/>
+    </trkseg>
+  </trk>
+</gpx>

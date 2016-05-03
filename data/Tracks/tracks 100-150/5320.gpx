@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Linas Valiukas</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:54:48Z</time>
+  </metadata>
+  <trk>
+    <name>Kauno maratonas 2014 - 5K</name>
+    <cmt>http://www.kaunasmarathon.lt/</cmt>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/356572013">
+      <text>Kauno maratonas 2014 - 5K</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.8913" lon="23.91559"/>
+      <trkpt lat="54.88945" lon="23.91683"/>
+      <trkpt lat="54.88925" lon="23.917"/>
+      <trkpt lat="54.88926" lon="23.91668"/>
+      <trkpt lat="54.88935" lon="23.91624"/>
+      <trkpt lat="54.8909" lon="23.91532"/>
+      <trkpt lat="54.89088" lon="23.91519"/>
+      <trkpt lat="54.89105" lon="23.9151"/>
+      <trkpt lat="54.89118" lon="23.91449"/>
+      <trkpt lat="54.89141" lon="23.91373"/>
+      <trkpt lat="54.89165" lon="23.91276"/>
+      <trkpt lat="54.89177" lon="23.91274"/>
+      <trkpt lat="54.89209" lon="23.91295"/>
+      <trkpt lat="54.89237" lon="23.91302"/>
+      <trkpt lat="54.89286" lon="23.91306"/>
+      <trkpt lat="54.89474" lon="23.91328"/>
+      <trkpt lat="54.89739" lon="23.91356"/>
+      <trkpt lat="54.89747" lon="23.91185"/>
+      <trkpt lat="54.89764" lon="23.90739"/>
+      <trkpt lat="54.89777" lon="23.90425"/>
+      <trkpt lat="54.89722" lon="23.90416"/>
+      <trkpt lat="54.89697" lon="23.90024"/>
+      <trkpt lat="54.89701" lon="23.89908"/>
+      <trkpt lat="54.89708" lon="23.89869"/>
+      <trkpt lat="54.89716" lon="23.89855"/>
+      <trkpt lat="54.89784" lon="23.90023"/>
+      <trkpt lat="54.89779" lon="23.90318"/>
+      <trkpt lat="54.8977" lon="23.90619"/>
+      <trkpt lat="54.8975" lon="23.91113"/>
+      <trkpt lat="54.89734" lon="23.9148"/>
+      <trkpt lat="54.89711" lon="23.91965"/>
+      <trkpt lat="54.89707" lon="23.92065"/>
+      <trkpt lat="54.89741" lon="23.92073"/>
+      <trkpt lat="54.89745" lon="23.92078"/>
+      <trkpt lat="54.89747" lon="23.9209"/>
+      <trkpt lat="54.89747" lon="23.92135"/>
+      <trkpt lat="54.89743" lon="23.92187"/>
+      <trkpt lat="54.8974" lon="23.92194"/>
+      <trkpt lat="54.8973" lon="23.92198"/>
+      <trkpt lat="54.89683" lon="23.92193"/>
+      <trkpt lat="54.89667" lon="23.9219"/>
+      <trkpt lat="54.89663" lon="23.92185"/>
+      <trkpt lat="54.89661" lon="23.92149"/>
+      <trkpt lat="54.89665" lon="23.9208"/>
+      <trkpt lat="54.89668" lon="23.9207"/>
+      <trkpt lat="54.89675" lon="23.92065"/>
+      <trkpt lat="54.89707" lon="23.92065"/>
+      <trkpt lat="54.89732" lon="23.91536"/>
+      <trkpt lat="54.89739" lon="23.91356"/>
+      <trkpt lat="54.89665" lon="23.91347"/>
+      <trkpt lat="54.89325" lon="23.91311"/>
+      <trkpt lat="54.89297" lon="23.91307"/>
+      <trkpt lat="54.89282" lon="23.91325"/>
+      <trkpt lat="54.89229" lon="23.91467"/>
+      <trkpt lat="54.89217" lon="23.91496"/>
+      <trkpt lat="54.89125" lon="23.91562"/>
+    </trkseg>
+  </trk>
+</gpx>

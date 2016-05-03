@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Martynas Kilmanas</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:43:34Z</time>
+  </metadata>
+  <trk>
+    <name>II-asis Kauno pusė maratono</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/306378824">
+      <text>II-asis Kauno pusė maratono</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.89776" lon="23.93674"/>
+      <trkpt lat="54.89687" lon="23.93674"/>
+      <trkpt lat="54.89672" lon="23.93747"/>
+      <trkpt lat="54.89697" lon="23.9379"/>
+      <trkpt lat="54.89724" lon="23.93799"/>
+      <trkpt lat="54.89719" lon="23.93846"/>
+      <trkpt lat="54.89705" lon="23.93932"/>
+      <trkpt lat="54.89638" lon="23.93919"/>
+      <trkpt lat="54.89652" lon="23.9396"/>
+      <trkpt lat="54.89666" lon="23.93987"/>
+      <trkpt lat="54.89775" lon="23.94153"/>
+      <trkpt lat="54.89858" lon="23.94252"/>
+      <trkpt lat="54.89897" lon="23.9429"/>
+      <trkpt lat="54.89918" lon="23.94332"/>
+      <trkpt lat="54.89968" lon="23.94401"/>
+      <trkpt lat="54.90062" lon="23.94502"/>
+      <trkpt lat="54.90206" lon="23.94684"/>
+      <trkpt lat="54.90409" lon="23.94925"/>
+      <trkpt lat="54.90418" lon="23.94926"/>
+      <trkpt lat="54.90084" lon="23.93227"/>
+      <trkpt lat="54.90076" lon="23.93187"/>
+      <trkpt lat="54.90062" lon="23.93234"/>
+      <trkpt lat="54.90043" lon="23.93318"/>
+      <trkpt lat="54.90017" lon="23.9349"/>
+      <trkpt lat="54.9002" lon="23.93492"/>
+      <trkpt lat="54.90017" lon="23.9349"/>
+      <trkpt lat="54.89982" lon="23.93584"/>
+      <trkpt lat="54.8998" lon="23.93589"/>
+      <trkpt lat="54.90014" lon="23.93641"/>
+      <trkpt lat="54.90193" lon="23.93878"/>
+      <trkpt lat="54.9011" lon="23.9392"/>
+      <trkpt lat="54.9005" lon="23.93958"/>
+      <trkpt lat="54.90035" lon="23.93962"/>
+      <trkpt lat="54.89934" lon="23.93945"/>
+      <trkpt lat="54.8993" lon="23.93944"/>
+      <trkpt lat="54.89911" lon="23.93599"/>
+      <trkpt lat="54.89927" lon="23.93591"/>
+      <trkpt lat="54.89931" lon="23.93543"/>
+      <trkpt lat="54.89928" lon="23.93527"/>
+      <trkpt lat="54.89921" lon="23.93514"/>
+      <trkpt lat="54.89907" lon="23.93509"/>
+      <trkpt lat="54.89894" lon="23.93259"/>
+      <trkpt lat="54.89899" lon="23.93251"/>
+      <trkpt lat="54.89894" lon="23.93259"/>
+      <trkpt lat="54.89907" lon="23.93509"/>
+      <trkpt lat="54.89921" lon="23.93514"/>
+      <trkpt lat="54.89928" lon="23.93527"/>
+      <trkpt lat="54.89931" lon="23.93543"/>
+      <trkpt lat="54.89927" lon="23.93591"/>
+      <trkpt lat="54.89911" lon="23.93599"/>
+      <trkpt lat="54.89926" lon="23.93936"/>
+      <trkpt lat="54.89901" lon="23.93945"/>
+      <trkpt lat="54.89853" lon="23.93927"/>
+      <trkpt lat="54.89864" lon="23.9392"/>
+      <trkpt lat="54.89796" lon="23.93829"/>
+      <trkpt lat="54.89825" lon="23.9376"/>
+      <trkpt lat="54.89793" lon="23.93683"/>
+    </trkseg>
+  </trk>
+</gpx>

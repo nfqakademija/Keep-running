@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Laima G.</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:50:20Z</time>
+  </metadata>
+  <trk>
+    <name>Kauno geležinkelio stotis - Parodos kalnas</name>
+    <cmt>Kauno geležinkelio stotis - Parodos kalnas</cmt>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/534882682">
+      <text>Kauno geležinkelio stotis - Parodos kalnas</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.88661" lon="23.93106"/>
+      <trkpt lat="54.8869" lon="23.93175"/>
+      <trkpt lat="54.88695" lon="23.93181"/>
+      <trkpt lat="54.88703" lon="23.9318"/>
+      <trkpt lat="54.88712" lon="23.93164"/>
+      <trkpt lat="54.88681" lon="23.93103"/>
+      <trkpt lat="54.88709" lon="23.93056"/>
+      <trkpt lat="54.88869" lon="23.928"/>
+      <trkpt lat="54.89033" lon="23.92542"/>
+      <trkpt lat="54.89032" lon="23.92567"/>
+      <trkpt lat="54.89033" lon="23.92542"/>
+      <trkpt lat="54.89069" lon="23.9249"/>
+      <trkpt lat="54.89099" lon="23.92481"/>
+      <trkpt lat="54.89134" lon="23.92494"/>
+      <trkpt lat="54.89692" lon="23.92524"/>
+      <trkpt lat="54.89732" lon="23.92529"/>
+      <trkpt lat="54.89749" lon="23.92545"/>
+      <trkpt lat="54.89806" lon="23.92728"/>
+      <trkpt lat="54.89824" lon="23.92827"/>
+      <trkpt lat="54.89837" lon="23.92908"/>
+      <trkpt lat="54.89848" lon="23.92947"/>
+      <trkpt lat="54.89877" lon="23.9301"/>
+      <trkpt lat="54.89884" lon="23.93045"/>
+      <trkpt lat="54.89887" lon="23.93169"/>
+      <trkpt lat="54.8989" lon="23.93186"/>
+      <trkpt lat="54.89897" lon="23.93199"/>
+      <trkpt lat="54.89911" lon="23.93206"/>
+      <trkpt lat="54.8991" lon="23.93221"/>
+      <trkpt lat="54.89905" lon="23.93252"/>
+      <trkpt lat="54.89905" lon="23.93343"/>
+      <trkpt lat="54.89914" lon="23.93443"/>
+      <trkpt lat="54.89911" lon="23.93556"/>
+    </trkseg>
+  </trk>
+</gpx>

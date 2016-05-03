@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Vytenis Dapkevičius</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-04-28T20:36:22Z</time>
+  </metadata>
+  <trk>
+    <name>KTUG 25 bėgimas</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/379200188">
+      <text>KTUG 25 bėgimas</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.90548" lon="23.95325"/>
+      <trkpt lat="54.906" lon="23.95354"/>
+      <trkpt lat="54.90613" lon="23.95337"/>
+      <trkpt lat="54.90664" lon="23.95583"/>
+      <trkpt lat="54.90603" lon="23.9566"/>
+      <trkpt lat="54.90577" lon="23.95687"/>
+      <trkpt lat="54.9054" lon="23.95722"/>
+      <trkpt lat="54.90421" lon="23.95827"/>
+      <trkpt lat="54.90247" lon="23.95987"/>
+      <trkpt lat="54.901" lon="23.96117"/>
+      <trkpt lat="54.9009" lon="23.96125"/>
+      <trkpt lat="54.8999" lon="23.96021"/>
+      <trkpt lat="54.8999" lon="23.95995"/>
+      <trkpt lat="54.89978" lon="23.95986"/>
+      <trkpt lat="54.89976" lon="23.95898"/>
+      <trkpt lat="54.90055" lon="23.95883"/>
+      <trkpt lat="54.90156" lon="23.9573"/>
+      <trkpt lat="54.90191" lon="23.95738"/>
+      <trkpt lat="54.90208" lon="23.95781"/>
+      <trkpt lat="54.90211" lon="23.95871"/>
+      <trkpt lat="54.90219" lon="23.95913"/>
+      <trkpt lat="54.90235" lon="23.95928"/>
+      <trkpt lat="54.90254" lon="23.95926"/>
+      <trkpt lat="54.90267" lon="23.95912"/>
+      <trkpt lat="54.90278" lon="23.95888"/>
+      <trkpt lat="54.9028" lon="23.95854"/>
+      <trkpt lat="54.90273" lon="23.95829"/>
+      <trkpt lat="54.90271" lon="23.958"/>
+      <trkpt lat="54.90289" lon="23.95646"/>
+      <trkpt lat="54.903" lon="23.95662"/>
+      <trkpt lat="54.903" lon="23.95758"/>
+      <trkpt lat="54.90313" lon="23.95749"/>
+      <trkpt lat="54.90351" lon="23.95656"/>
+      <trkpt lat="54.90368" lon="23.95657"/>
+      <trkpt lat="54.90386" lon="23.95694"/>
+      <trkpt lat="54.90482" lon="23.95606"/>
+      <trkpt lat="54.90481" lon="23.95589"/>
+      <trkpt lat="54.90491" lon="23.95573"/>
+      <trkpt lat="54.90466" lon="23.95455"/>
+      <trkpt lat="54.90451" lon="23.95355"/>
+      <trkpt lat="54.90467" lon="23.9533"/>
+      <trkpt lat="54.90497" lon="23.95307"/>
+      <trkpt lat="54.90503" lon="23.95302"/>
+      <trkpt lat="54.90547" lon="23.95335"/>
+    </trkseg>
+  </trk>
+</gpx>

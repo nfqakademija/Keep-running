@@ -14,3 +14,5 @@ class MapControllerTest extends WebTestCase
     }
 
 }
+
+?>

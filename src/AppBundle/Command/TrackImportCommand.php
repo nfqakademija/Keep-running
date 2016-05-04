@@ -45,7 +45,14 @@ class TrackImportCommand extends ContainerAwareCommand
             $startLon = $points[0]['lon'];
             $trackDifficulty = rand(1, 3);
             // persist to mysql
-            $repository->persistTrack($pointsInJson, $startLat, $startLon, $trackDistance, $trackDifficulty, $trackName);
+            $repository->persistTrack(
+                $pointsInJson,
+                $startLat,
+                $startLon,
+                $trackDistance,
+                $trackDifficulty,
+                $trackName
+            );
         }
     }
 }

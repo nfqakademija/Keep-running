@@ -13,4 +13,3 @@ class MapControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/map');
     }
 }
-

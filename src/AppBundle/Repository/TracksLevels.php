@@ -33,4 +33,3 @@ class TracksLevels
         $this->connection = $connection;
     }
 }
-

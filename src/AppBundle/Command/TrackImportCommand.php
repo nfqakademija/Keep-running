@@ -51,5 +51,3 @@ class TrackImportCommand extends ContainerAwareCommand
     }
 
 }
-
-?>

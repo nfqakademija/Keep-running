@@ -14,7 +14,6 @@ class MapController extends Controller
         $trackLevels = $repositoryLevels->getLevels();
         $maxDistance = $repositoryTracks->getMaxDistance();
         $maxDistanceToKilometer = ceil($maxDistance[0]['MAX(`running_tracks`.`trackDistance`)'] / 1000);
-
         $distance = [];
         $distanceFrom = $request->query->get('distance_from') ?: null;
         $distanceTo = $request->query->get('distance_to') ?: null;
@@ -40,5 +39,3 @@ class MapController extends Controller
         ]);
     }
 }
-
-?>

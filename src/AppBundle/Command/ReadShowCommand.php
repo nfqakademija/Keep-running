@@ -30,5 +30,3 @@ class ReadShowCommand extends ContainerAwareCommand
         $output->writeln($files);
     }
 }
-
-?>

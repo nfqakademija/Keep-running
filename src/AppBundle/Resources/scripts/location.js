@@ -12,6 +12,15 @@ function findPoint(data) {
         'lon': parseFloat(data["lon"])
     };
 }
+function setFitBound(map,data){
+    var bounds = new google.maps.LatLngBounds();
+    console.log(data[0]['lat']);
+    for (var i = 0; i < data.length; i++) {
+        var myLatLng = new google.maps.LatLng(data[i]['lat'], data[i]['lon']);
+        bounds.extend(myLatLng);
+    }
+    map.fitBounds(bounds);
+}
 
 function findPoints(data) {
     var pointLength = data.length - 1;
@@ -57,11 +66,10 @@ function getWayPoints() {
     var wayPointsFromAttribute= JSON.parse(attr.getAttribute('data-points'));
     wayPointsFromAttribute = wayPointsFromAttribute.points;
     var wayPoints = [];
-    console.log(wayPointsFromAttribute.length);
     var points = findPoints(wayPointsFromAttribute);
     var currentPosition = {lat: points[0]['lat'], lng: points[0]['lon']};
     var mapOptions ={
-        zoom: 15,
+        zoom: 16,
         center:currentPosition/* {lat: 54.89692, lng: 23.93794}*/,
         mapTypeControl: false,
         scrollwheel: false,
@@ -74,16 +82,12 @@ function getWayPoints() {
     google.maps.event.addListener(map, 'click', function(event){
         this.setOptions({scrollwheel:true});
     });
-
+    setFitBound(map,points);
     var marker=new google.maps.Marker({
         position:currentPosition,
-        map: map
-    });
-    var info = new google.maps.InfoWindow({
-        content: 'Startas!'
-    });
-    google.maps.event.addListener(marker, 'click', function() {
-        info.open(map, marker);
+        icon: 'images/start-marker.png',
+        map: map,
+        title: 'Startas'
     });
 
     for (var i = 0; i < points.length; i++) {
@@ -94,8 +98,6 @@ function getWayPoints() {
     }
 
     var groupedPoints = groupPoints(wayPoints);
-    var markerFirstPointLatitude=groupedPoints.groupA[0].location.lat();
-    var markerFirstPointLongtitude=groupedPoints.groupA[0].location.lng();
     plotTrack(groupedPoints.groupA,'#ff0000');
     plotTrack(groupedPoints.groupB,'#0066ff');
 }
@@ -126,7 +128,7 @@ function plotTrack(wayPoints,lineColor) {
     directionsService.push(new google.maps.DirectionsService());
     directionsDisplay.push(new google.maps.DirectionsRenderer({
         preserveViewport: true,
-        suppressMarkers: false,
+        suppressMarkers: true,
         polylineOptions: { strokeColor: lineColor,strokeOpacity: 0.7,strokeWeight: 5 }
     }));
 

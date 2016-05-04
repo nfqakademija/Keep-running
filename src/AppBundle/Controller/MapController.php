@@ -31,11 +31,15 @@ class MapController extends Controller
         $trackId = $tracksAfterFilter[$randomTrackNumber]['trackId'];
         $track = $repository->getTrackById($trackId);
         $points = $track[0]['trackPoints'];
-        echo $trackId;
+        $trackInformation = $repository->getInformationAboutTrack($trackId)[0];
+      //  echo $trackId;
         return $this->render('AppBundle:Map:index.html.twig', [
             'points' => $points,
             'tracks_levels' => $trackLevels,
-            'max_distance' => $maxDistanceToKilometer
+            'max_distance' => $maxDistanceToKilometer,
+            'track_info' => $trackInformation,
+            'distance_from' => $distanceFrom,
+            'distance_to' => $distanceTo,
         ]);
     }
 }

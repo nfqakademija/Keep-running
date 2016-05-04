@@ -18,28 +18,28 @@
         </header>
 
         <section id="filters-and-info">
-            <h1>Filtrai</h1>
+            <h1>Filtras</h1>
             <form action="{{ path('map.index') }}" id="filters-form">
                 <div class="form-group">
-                    <h2>Trasos ilgis?</h2>
+                    <h2>Trasos ilgis:</h2>
                     <div class="filters-input">
                         <p id="distance-text"></p>
                         <span style="display: none"><input id="distance" type="text" readonly=""> km</span>
-                        <input id="distance_from" type="hidden"  name="distance_from" value="2">
-                        <input id="distance_to" type="hidden"  name="distance_to" value="{{ max_distance }}">
+                        <input id="distance_from" type="hidden"  name="distance_from" value="{{ distance_from }}">
+                        <input id="distance_to" type="hidden"  name="distance_to" value="{{ distance_to }}">
                         <div id="distance_slider_range"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <h2>Sunkumas?</h2>
+                    <h2>Sunkumas:</h2>
                     <div class="filters-input">
                         <div id="difficulties">
-                            {#{% for level in tracks_levels %}#}
-                            {#<input type="radio" name="difficulty" value="{{ level.levelId }}"> {{ level.levelName }}#}
-                            {#{% endfor %}#}
-                            <input type="radio" name="difficulty" value="1"> Lengva
-                            <input type="radio" name="difficulty" value="2" checked> Vidutinė
-                            <input type="radio" name="difficulty" value="3"> Sunki
+                            {% for level in tracks_levels %}
+                                <input type="radio" name="difficulty" value="{{ level.levelId }}"
+                                       {% if level.levelId == track_info.levelId %}
+                                checked
+                                {% endif %} >{{ level.levelName }}
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -47,28 +47,31 @@
             </form>
             <div id="info-about-track">
                 <h1>Informacija apie trasą</h1>
-                <h2>Maršruto pav</h2>
+                <h2>Maršruto pav.</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error incidunt magnam, molestias quisquam soluta.
+                   {{ track_info.trackName }}
                 </p>
-                <p><b>Ilgis:</b> 4 km</p>
-                <p><b>Sunkumas:</b> Lengva</p>
+                <p><b>Ilgis:</b> {{ track_info.trackDistance / 1000 }} Km</p>
+                <p><b>Sunkumas:</b> {{ track_info.levelName }}</p>
             </div>
         </section>
 
         <section id="map" data-points="{{ points }}"></section>
     </div>
-    {#end body#}
 {% endblock %}
 
 {% block javascripts %}
+    <script src="{{ asset('js/script.js') }}"></script>
+    <script type="text/javascript">
+        window.onload = showRoute;
+    </script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script type="text/javascript">
         $(function () {
             $("#distance_slider_range").slider({
                 range: true,
-                values: [2, {{ max_distance }}],
+                values: [{{ distance_from }}, {{ distance_to }}],
                 min: 2,
                 max: {{ max_distance }},
                 slide: function( event, ui ) {
@@ -81,8 +84,5 @@
                     " - " + $( "#distance_slider_range" ).slider( "values", 1 ) + " km" );
         });
     </script>
-    <script src="{{ asset('js/script.js') }}"></script>
-    <script type="text/javascript">
-        window.onload = showRoute;
-    </script>
+
 {% endblock %}

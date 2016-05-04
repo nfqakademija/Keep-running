@@ -31,10 +31,10 @@
     <div id="main-page-sections">
         <section id="filters-section">
             <div class="container">
-                <h1>Filtrai</h1>
+                <h1>Filtras</h1>
                 <form action="{{ path('map.index') }}" id="filters-form">
                     <div class="form-group">
-                        <h2>Trasos ilgis?</h2>
+                        <h2>Trasos ilgis</h2>
                         <div class="filters-input">
                             <p id="distance-text"></p>
                             <span style="display: none"><input id="distance" type="text" readonly=""> km</span>
@@ -44,15 +44,13 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <h2>Sunkumas?</h2>
+                        <h2>Sunkumas</h2>
                         <div class="filters-input">
                             <div id="difficulties">
-                                {#{% for level in tracks_levels %}#}
-                                    {#<input type="radio" name="difficulty" value="{{ level.levelId }}"> {{ level.levelName }}#}
-                                {#{% endfor %}#}
-                                <input type="radio" name="difficulty" value="1"> Lengva
-                                <input type="radio" name="difficulty" value="2" checked> Vidutinė
-                                <input type="radio" name="difficulty" value="3"> Sunki
+                                {% for level in tracks_levels %}
+                                    <input type="radio" name="difficulty" value="{{ level.levelId }}" {% if level.levelId == 2 %}checked{% endif %} >
+                                    {{ level.levelName }}
+                                {% endfor %}
                             </div>
                         </div>
                     </div>

@@ -22,7 +22,9 @@ class TracksLevels
      */
     public function getLevels()
     {
-        return $this->connection->fetchAll('SELECT * FROM `running_tracks_level`');
+        $sql = 'SELECT * FROM `running_tracks_level` '
+            . 'ORDER BY  `running_tracks_level`.`levelId`';
+        return $this->connection->fetchAll($sql);
     }
 
     /**

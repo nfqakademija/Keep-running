@@ -89,4 +89,18 @@ class Tracks
     {
         $this->connection->exec('TRUNCATE running_tracks');
     }
+
+    /**
+     * @return array
+     */
+    public function getInformationAboutTrack($trackId)
+    {
+        $sql = 'SELECT `running_tracks`.`trackDistance`,`running_tracks`.`trackName`, '
+        .'`running_tracks_level`.`levelName`,`running_tracks_level`.`levelId`  '
+            .'FROM `running_tracks` '
+            .'LEFT JOIN `running_tracks_level` ON `running_tracks_level`.`levelId`=`running_tracks`.`trackLevelId` '
+            .'WHERE `running_tracks`.`trackId`='.$trackId.' '
+            .'LIMIT 1';
+        return $this->connection->fetchAll($sql);
+    }
 }

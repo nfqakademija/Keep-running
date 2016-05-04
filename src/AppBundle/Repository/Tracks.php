@@ -87,5 +87,4 @@ class Tracks
     {
         $this->connection->exec('TRUNCATE running_tracks');
     }
-
 }

@@ -39,6 +39,6 @@ class MapController extends Controller
             'max_distance' => $maxDistanceToKilometer
         ]);
     }
-
-
 }
+
+?>

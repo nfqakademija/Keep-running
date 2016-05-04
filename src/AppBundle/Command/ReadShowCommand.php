@@ -20,14 +20,15 @@ class ReadShowCommand extends ContainerAwareCommand
     {
         $this
             ->setName('read:run')
-            ->setDescription('Read and list files')
-        ;
+            ->setDescription('Read and list files');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $dir    = './data/Tracks';
-        $files= scandir($dir);
+        $dir = './data/Tracks';
+        $files = scandir($dir);
         $output->writeln($files);
     }
 }
+
+?>

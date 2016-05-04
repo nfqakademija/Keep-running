@@ -27,9 +27,9 @@ class Tracks
     {
         $sql = 'SELECT `running_tracks`.`trackId` FROM `running_tracks` WHERE TRUE';
         if ($distance) {
-            $distanceFrom=$distance['distanceFrom'];
-            $distanceTo=$distance['distanceTo'];
-            $sql .= ' AND `running_tracks`.`trackDistance` BETWEEN '.$distanceFrom.' AND ' . $distanceTo;
+            $distanceFrom = $distance['distanceFrom'];
+            $distanceTo = $distance['distanceTo'];
+            $sql .= ' AND `running_tracks`.`trackDistance` BETWEEN ' . $distanceFrom . ' AND ' . $distanceTo;
         }
         if ($difficulty) {
             $sql .= ' AND `running_tracks`.`trackLevelId` = ' . $difficulty;
@@ -70,7 +70,7 @@ class Tracks
      *
      */
 
-    public function persistTrack($trackPoints, $start1, $start2, $distance, $difficulty)
+    public function persistTrack($trackPoints, $start1, $start2, $distance, $difficulty, $name)
     {
         $this->connection->insert('running_tracks',
             [
@@ -78,7 +78,8 @@ class Tracks
                 'trackStartPointLatitude' => $start2,
                 'trackPoints' => $trackPoints,
                 'trackDistance' => $distance,
-                'trackLevelId' => $difficulty
+                'trackLevelId' => $difficulty,
+                'trackName' => $name
             ]);
     }
 
@@ -88,3 +89,5 @@ class Tracks
     }
 
 }
+
+?>

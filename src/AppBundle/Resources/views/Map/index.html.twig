@@ -5,42 +5,59 @@
 {% block body %}
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 
-    <section id="map-page">
+    <div id="map-page">
         <header>
             <h1>Keep Running</h1>
             <nav>
                 <ul>
                     <li><a href="{{ path('home.index') }}">Pagrindinis</a></li>
-                    <li><a href="{{ path('home.index') }}">Išskirtinumas</a></li>
-                    <li><a href="{{ path('home.index') }}">Apie projektą</a></li>
+                    <li><a href="{{ path('home.index') }}#uniqueness">Išskirtinumas</a></li>
+                    <li><a href="{{ path('home.index') }}#about-project">Apie projektą</a></li>
                 </ul>
             </nav>
         </header>
-{# added to test tracks#}
+
+        <section id="filters-and-info">
+            <h1>Filtras</h1>
+            <form action="{{ path('map.index') }}" id="filters-form">
+                <div class="form-group">
+                    <h2>Trasos ilgis:</h2>
+                    <div class="filters-input">
+                        <p id="distance-text"></p>
+                        <span style="display: none"><input id="distance" type="text" readonly=""> km</span>
+                        <input id="distance_from" type="hidden"  name="distance_from" value="{{ distance_from }}">
+                        <input id="distance_to" type="hidden"  name="distance_to" value="{{ distance_to }}">
+                        <div id="distance_slider_range"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <h2>Sunkumas:</h2>
+                    <div class="filters-input">
+                        <div id="difficulties">
+                            {% for level in tracks_levels %}
+                                <input type="radio" name="difficulty" value="{{ level.levelId }}"
+                                       {% if level.levelId == track_info.levelId %}
+                                checked
+                                {% endif %} >{{ level.levelName }}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <button>Generuoti trasą</button>
+            </form>
+            <div id="info-about-track">
+                <h1>Informacija apie trasą</h1>
+                <h2>Maršruto pav.</h2>
+                <p>
+                   {{ track_info.trackName }}
+                </p>
+                <p><b>Ilgis:</b> {{ track_info.trackDistance / 1000 }} Km</p>
+                <p><b>Sunkumas:</b> {{ track_info.levelName }}</p>
+            </div>
+        </section>
+
         <section id="map" data-points="{{ points }}"></section>
-
-        {#<section id="map-more-actions">#}
-            {#<nav>#}
-                {#<ul>#}
-                    {#<li><a href="#">Pakeisti filtrą</a></li>#}
-                    {#<li><a href="#">Įvertinti</a></li>#}
-                    {#<li><a href="#">Pasidalinti</a></li>#}
-                {#</ul>#}
-            {#</nav>#}
-        {#</section>#}
-    </section>
-
-    <div id="filters-in-map" style="display:none">
-        <form action="">
-            Trasos ilgis <input type="range" name="distance" min="1" max="20"> <span>10 km</span> <br>
-            Sunkumas
-            <input type="checkbox" name="easy-difficulty" value="easy"> Lengvas
-            <input type="checkbox" name="normal-difficulty" value="normal"> Normalus
-            <input type="checkbox" name="hard-difficulty" value="hard"> Sunkus
-            <button>Generuoti trasą</button>
-        </form>
     </div>
-    {#end body#}
 {% endblock %}
 
 {% block javascripts %}
@@ -48,4 +65,24 @@
     <script type="text/javascript">
         window.onload = showRoute;
     </script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#distance_slider_range").slider({
+                range: true,
+                values: [{{ distance_from }}, {{ distance_to }}],
+                min: 2,
+                max: {{ max_distance }},
+                slide: function( event, ui ) {
+                    $( "#distance-text" ).html( ui.values[0] + " - " + ui.values[1] + " km");
+                    $( "#distance_from" ).val(ui.values[0]);
+                    $( "#distance_to" ).val(ui.values[1]);
+                }
+            });
+            $( "#distance-text" ).html( $( "#distance_slider_range" ).slider( "values", 0 ) +
+                    " - " + $( "#distance_slider_range" ).slider( "values", 1 ) + " km" );
+        });
+    </script>
+
 {% endblock %}

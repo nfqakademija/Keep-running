@@ -96,19 +96,17 @@ function getWayPoints() {
     var groupedPoints = groupPoints(wayPoints);
     var markerFirstPointLatitude=groupedPoints.groupA[0].location.lat();
     var markerFirstPointLongtitude=groupedPoints.groupA[0].location.lng();
-    console.log(markerFirstPointLongtitude);
-    plotTrack(groupedPoints.groupA);
-    plotTrack(groupedPoints.groupB);
+    plotTrack(groupedPoints.groupA,'#ff0000');
+    plotTrack(groupedPoints.groupB,'#0066ff');
 }
 
-function plotTrack(wayPoints) {
+function plotTrack(wayPoints,lineColor) {
     var startPoint = wayPoints[0].location;
     var startPointLatitde = startPoint.lat();
     var startPointLongtitude = wayPoints[0].location.lng();
     var endPoint = wayPoints[wayPoints.length-1].location;
     var endPointLatitde = endPoint.lat();
     var endPointLongtitude = endPoint.lng();
-    console.log(wayPoints.length);
     wayPoints.shift();
     wayPoints.pop();
 
@@ -123,10 +121,13 @@ function plotTrack(wayPoints) {
     var directionsDisplay = [];
     var directionsService = [];
 
+
+
     directionsService.push(new google.maps.DirectionsService());
     directionsDisplay.push(new google.maps.DirectionsRenderer({
         preserveViewport: true,
-        suppressMarkers: false
+        suppressMarkers: false,
+        polylineOptions: { strokeColor: lineColor,strokeOpacity: 0.7,strokeWeight: 5 }
     }));
 
     var instance = directionsService.length - 1;

@@ -31,20 +31,28 @@
     <div id="main-page-sections">
         <section id="filters-section">
             <div class="container">
-                <h1>Filtrai</h1>
+                <h1>Filtras</h1>
                 <form action="{{ path('map.index') }}" id="filters-form">
                     <div class="form-group">
-                        <h2>Trasos ilgis?</h2>
-                        <span style="display: none"><input id="distance" type="text" readonly=""> km</span>
-                        <input id="distance_from" type="hidden"  name="distance_from">
-                        <input id="distance_to" type="hidden"  name="distance_to">
-                        <div id="distance_slider_range"></div>
+                        <h2>Trasos ilgis</h2>
+                        <div class="filters-input">
+                            <p id="distance-text"></p>
+                            <span style="display: none"><input id="distance" type="text" readonly=""> km</span>
+                            <input id="distance_from" type="hidden"  name="distance_from" value="2">
+                            <input id="distance_to" type="hidden"  name="distance_to" value="{{ max_distance }}">
+                            <div id="distance_slider_range"></div>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <h2>Sunkumas?</h2>
-                        {% for level in tracks_levels %}
-                            <input type="radio" name="difficulty" value="{{ level.levelId }}"> {{ level.levelName }}
-                        {% endfor %}
+                        <h2>Sunkumas</h2>
+                        <div class="filters-input">
+                            <div id="difficulties">
+                                {% for level in tracks_levels %}
+                                    <input type="radio" name="difficulty" value="{{ level.levelId }}" {% if level.levelId == 2 %}checked{% endif %} >
+                                    {{ level.levelName }}
+                                {% endfor %}
+                            </div>
+                        </div>
                     </div>
                     <button>Generuoti trasą</button>
                 </form>
@@ -115,13 +123,13 @@
                 min: 2,
                 max: {{ max_distance }},
                 slide: function( event, ui ) {
-                    $( "#distance" ).val( ui.values[0] + " - " + ui.values[1] );
+                    $( "#distance-text" ).html( ui.values[0] + " - " + ui.values[1] + " km");
                     $( "#distance_from" ).val(ui.values[0]);
                     $( "#distance_to" ).val(ui.values[1]);
                 }
             });
-            $( "#distance" ).val( $( "#distance_slider_range" ).slider( "values", 0 ) +
-                    " - " + $( "#distance_slider_range" ).slider( "values", 1 ) );
+            $( "#distance-text" ).html( $( "#distance_slider_range" ).slider( "values", 0 ) +
+                    " - " + $( "#distance_slider_range" ).slider( "values", 1 ) + " km" );
         });
     </script>
 {% endblock %}

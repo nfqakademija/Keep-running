@@ -9,6 +9,11 @@ class MapController extends Controller
 {
     public function indexAction(Request $request)
     {
+        $repositoryLevels = $this->get('app_bundle.repository.trackslevels');
+        $repositoryTracks = $this->get('app_bundle.repository.tracks');
+        $trackLevels = $repositoryLevels->getLevels();
+        $maxDistance = $repositoryTracks->getMaxDistance();
+        $maxDistanceToKilometer = ceil($maxDistance[0]['MAX(`running_tracks`.`trackDistance`)'] / 1000);
         $distance = [];
         $distanceFrom = $request->query->get('distance_from') ?: null;
         $distanceTo = $request->query->get('distance_to') ?: null;
@@ -26,11 +31,15 @@ class MapController extends Controller
         $trackId = $tracksAfterFilter[$randomTrackNumber]['trackId'];
         $track = $repository->getTrackById($trackId);
         $points = $track[0]['trackPoints'];
-        echo $trackId;
+        $trackInformation = $repository->getInformationAboutTrack($trackId)[0];
+      //  echo $trackId;
         return $this->render('AppBundle:Map:index.html.twig', [
             'points' => $points,
+            'tracks_levels' => $trackLevels,
+            'max_distance' => $maxDistanceToKilometer,
+            'track_info' => $trackInformation,
+            'distance_from' => $distanceFrom,
+            'distance_to' => $distanceTo,
         ]);
     }
-
-
 }

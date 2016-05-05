@@ -48,7 +48,8 @@ class Tracks
      */
     public function getTrackById($trackId)
     {
-        $sql = 'SELECT `running_tracks`.`trackPoints`,`running_tracks`.`trackDistance`,`running_tracks`.`trackId` FROM `running_tracks` ';
+        $sql = 'SELECT `running_tracks`.`trackPoints`,`running_tracks`.`trackDistance`,`running_tracks`.`trackId` '
+        .'FROM `running_tracks` ';
         if ($trackId) {
             $sql .= 'WHERE `running_tracks`.`trackId`=' . (integer)$trackId;
         }

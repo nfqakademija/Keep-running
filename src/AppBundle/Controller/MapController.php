@@ -24,7 +24,7 @@ class MapController extends Controller
         $trackLevels = $repositoryLevels->getLevels();
         $maxDistance = $repositoryTracks->getMaxDistance();
         $tracksMaxDistance = $maxDistance[0]['MAX(`running_tracks`.`trackDistance`)'];
-        $trackMaxDistanceKm= ceil( $this->kilometersToMeters($tracksMaxDistance));
+        $trackMaxDistanceKm= ceil($this->kilometersToMeters($tracksMaxDistance));
         $trackId = $request->query->get('trackId') ?: null;
         $distanceFrom = $request->query->get('distance_from') ?: 2;
         $distanceTo = $request->query->get('distance_to') ?: $trackMaxDistanceKm;

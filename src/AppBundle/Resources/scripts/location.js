@@ -14,7 +14,6 @@ function findPoint(data) {
 }
 function setFitBound(map,data){
     var bounds = new google.maps.LatLngBounds();
-    console.log(data[0]['lat']);
     for (var i = 0; i < data.length; i++) {
         var myLatLng = new google.maps.LatLng(data[i]['lat'], data[i]['lon']);
         bounds.extend(myLatLng);

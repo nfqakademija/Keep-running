@@ -50,6 +50,7 @@ class MapController extends Controller
         $trackInformation = $repositoryTracks->getInformationAboutTrack($trackId)[0];
         $trackUrl = $request->getScheme() . '://' . $request->getHttpHost()
             . $request->getPathInfo() . '?trackId=' . $trackId;
+        echo $trackId;
         return $this->render('AppBundle:Map:index.html.twig', [
             'points' => $points,
             'tracks_levels' => $trackLevels,

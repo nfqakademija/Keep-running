@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Dainius Plenta</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-05-03T20:10:07Z</time>
+  </metadata>
+  <trk>
+    <name>6Km runing</name>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/184672806">
+      <text>6Km runing</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.92551" lon="23.93616"/>
+      <trkpt lat="54.92356" lon="23.93856"/>
+      <trkpt lat="54.92305" lon="23.93924"/>
+      <trkpt lat="54.92298" lon="23.93917"/>
+      <trkpt lat="54.92319" lon="23.93945"/>
+      <trkpt lat="54.92364" lon="23.94024"/>
+      <trkpt lat="54.92389" lon="23.94078"/>
+      <trkpt lat="54.92422" lon="23.94178"/>
+      <trkpt lat="54.92457" lon="23.94342"/>
+      <trkpt lat="54.92463" lon="23.94361"/>
+      <trkpt lat="54.92468" lon="23.94359"/>
+      <trkpt lat="54.92463" lon="23.94361"/>
+      <trkpt lat="54.92494" lon="23.94474"/>
+      <trkpt lat="54.92531" lon="23.94635"/>
+      <trkpt lat="54.92555" lon="23.94754"/>
+      <trkpt lat="54.92591" lon="23.94898"/>
+      <trkpt lat="54.92615" lon="23.95013"/>
+      <trkpt lat="54.92628" lon="23.95108"/>
+      <trkpt lat="54.92634" lon="23.95188"/>
+      <trkpt lat="54.9264" lon="23.95337"/>
+      <trkpt lat="54.92638" lon="23.95513"/>
+      <trkpt lat="54.92633" lon="23.95608"/>
+      <trkpt lat="54.92622" lon="23.95724"/>
+      <trkpt lat="54.92606" lon="23.95816"/>
+      <trkpt lat="54.92592" lon="23.95873"/>
+      <trkpt lat="54.92588" lon="23.95871"/>
+      <trkpt lat="54.92592" lon="23.95873"/>
+      <trkpt lat="54.92561" lon="23.95961"/>
+      <trkpt lat="54.92432" lon="23.96251"/>
+      <trkpt lat="54.92414" lon="23.96279"/>
+      <trkpt lat="54.92411" lon="23.96284"/>
+      <trkpt lat="54.92558" lon="23.96598"/>
+      <trkpt lat="54.92759" lon="23.97055"/>
+      <trkpt lat="54.92774" lon="23.97064"/>
+      <trkpt lat="54.92842" lon="23.97178"/>
+      <trkpt lat="54.92946" lon="23.97044"/>
+      <trkpt lat="54.92988" lon="23.96974"/>
+      <trkpt lat="54.93025" lon="23.96889"/>
+      <trkpt lat="54.93045" lon="23.96818"/>
+      <trkpt lat="54.93056" lon="23.96758"/>
+      <trkpt lat="54.93069" lon="23.96653"/>
+      <trkpt lat="54.93097" lon="23.95648"/>
+      <trkpt lat="54.93104" lon="23.95309"/>
+      <trkpt lat="54.9311" lon="23.95236"/>
+      <trkpt lat="54.93132" lon="23.94435"/>
+      <trkpt lat="54.93128" lon="23.94399"/>
+      <trkpt lat="54.93117" lon="23.9435"/>
+      <trkpt lat="54.93106" lon="23.94336"/>
+      <trkpt lat="54.931" lon="23.94312"/>
+      <trkpt lat="54.93098" lon="23.94286"/>
+      <trkpt lat="54.93101" lon="23.94259"/>
+      <trkpt lat="54.93137" lon="23.94167"/>
+      <trkpt lat="54.93142" lon="23.94137"/>
+      <trkpt lat="54.93146" lon="23.93937"/>
+      <trkpt lat="54.93144" lon="23.93829"/>
+      <trkpt lat="54.93139" lon="23.93767"/>
+      <trkpt lat="54.93125" lon="23.93661"/>
+      <trkpt lat="54.931" lon="23.9355"/>
+      <trkpt lat="54.93061" lon="23.93416"/>
+      <trkpt lat="54.93044" lon="23.93419"/>
+      <trkpt lat="54.92921" lon="23.93496"/>
+      <trkpt lat="54.92796" lon="23.93601"/>
+      <trkpt lat="54.92786" lon="23.93606"/>
+      <trkpt lat="54.92567" lon="23.93612"/>
+      <trkpt lat="54.92554" lon="23.93621"/>
+    </trkseg>
+  </trk>
+</gpx>

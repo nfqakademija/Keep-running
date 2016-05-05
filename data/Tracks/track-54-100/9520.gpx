@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Arniokas Vasciliokas</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-05-03T20:15:03Z</time>
+  </metadata>
+  <trk>
+    <name>Silainiai / Vilijampole</name>
+    <cmt>Begimas  silainiai /  vilijampole  iki kauno pilies tilto superrr ,nes eina palei Neri grazus vaizdas ir puikus begimo takas :)</cmt>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/466679810">
+      <text>Silainiai / Vilijampole</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.9301" lon="23.894"/>
+      <trkpt lat="54.93008" lon="23.89397"/>
+      <trkpt lat="54.92634" lon="23.90293"/>
+      <trkpt lat="54.92579" lon="23.90465"/>
+      <trkpt lat="54.9254" lon="23.90609"/>
+      <trkpt lat="54.92495" lon="23.90715"/>
+      <trkpt lat="54.92465" lon="23.90773"/>
+      <trkpt lat="54.92419" lon="23.90832"/>
+      <trkpt lat="54.92334" lon="23.90895"/>
+      <trkpt lat="54.92306" lon="23.90906"/>
+      <trkpt lat="54.92235" lon="23.90906"/>
+      <trkpt lat="54.92177" lon="23.90888"/>
+      <trkpt lat="54.92034" lon="23.90825"/>
+      <trkpt lat="54.91994" lon="23.90812"/>
+      <trkpt lat="54.91502" lon="23.9077"/>
+      <trkpt lat="54.91493" lon="23.90762"/>
+      <trkpt lat="54.91467" lon="23.90759"/>
+      <trkpt lat="54.91444" lon="23.90753"/>
+      <trkpt lat="54.91368" lon="23.90714"/>
+      <trkpt lat="54.91278" lon="23.90653"/>
+      <trkpt lat="54.91235" lon="23.90608"/>
+      <trkpt lat="54.91208" lon="23.90549"/>
+      <trkpt lat="54.91198" lon="23.90512"/>
+      <trkpt lat="54.91185" lon="23.90423"/>
+      <trkpt lat="54.91144" lon="23.8993"/>
+      <trkpt lat="54.9113" lon="23.89857"/>
+      <trkpt lat="54.91122" lon="23.89833"/>
+      <trkpt lat="54.91094" lon="23.89718"/>
+      <trkpt lat="54.91072" lon="23.8966"/>
+      <trkpt lat="54.9103" lon="23.89569"/>
+      <trkpt lat="54.90999" lon="23.89518"/>
+      <trkpt lat="54.90924" lon="23.89419"/>
+      <trkpt lat="54.90547" lon="23.88975"/>
+      <trkpt lat="54.90528" lon="23.88944"/>
+      <trkpt lat="54.9051" lon="23.88902"/>
+      <trkpt lat="54.90494" lon="23.88852"/>
+      <trkpt lat="54.90494" lon="23.88838"/>
+      <trkpt lat="54.90432" lon="23.88787"/>
+      <trkpt lat="54.90428" lon="23.888"/>
+      <trkpt lat="54.9042" lon="23.88794"/>
+      <trkpt lat="54.90324" lon="23.88716"/>
+      <trkpt lat="54.90314" lon="23.88701"/>
+      <trkpt lat="54.90303" lon="23.88666"/>
+      <trkpt lat="54.90283" lon="23.88452"/>
+      <trkpt lat="54.90277" lon="23.88358"/>
+      <trkpt lat="54.90279" lon="23.88274"/>
+      <trkpt lat="54.90284" lon="23.88213"/>
+      <trkpt lat="54.90299" lon="23.88239"/>
+      <trkpt lat="54.90284" lon="23.88213"/>
+      <trkpt lat="54.90277" lon="23.88316"/>
+      <trkpt lat="54.9028" lon="23.8841"/>
+      <trkpt lat="54.90288" lon="23.88505"/>
+      <trkpt lat="54.90303" lon="23.88666"/>
+      <trkpt lat="54.90314" lon="23.88701"/>
+      <trkpt lat="54.90324" lon="23.88716"/>
+      <trkpt lat="54.90428" lon="23.888"/>
+      <trkpt lat="54.90432" lon="23.88787"/>
+      <trkpt lat="54.90494" lon="23.88838"/>
+      <trkpt lat="54.90494" lon="23.88852"/>
+      <trkpt lat="54.9051" lon="23.88902"/>
+      <trkpt lat="54.90528" lon="23.88944"/>
+      <trkpt lat="54.90547" lon="23.88975"/>
+      <trkpt lat="54.90924" lon="23.89419"/>
+      <trkpt lat="54.90999" lon="23.89518"/>
+      <trkpt lat="54.9103" lon="23.89569"/>
+      <trkpt lat="54.91072" lon="23.8966"/>
+      <trkpt lat="54.91094" lon="23.89718"/>
+      <trkpt lat="54.91115" lon="23.89789"/>
+      <trkpt lat="54.91174" lon="23.89777"/>
+      <trkpt lat="54.91115" lon="23.89789"/>
+      <trkpt lat="54.91144" lon="23.8993"/>
+      <trkpt lat="54.91185" lon="23.90423"/>
+      <trkpt lat="54.91198" lon="23.90512"/>
+      <trkpt lat="54.91208" lon="23.90549"/>
+      <trkpt lat="54.91235" lon="23.90608"/>
+      <trkpt lat="54.91256" lon="23.90633"/>
+      <trkpt lat="54.91316" lon="23.90682"/>
+      <trkpt lat="54.91368" lon="23.90714"/>
+      <trkpt lat="54.91418" lon="23.90741"/>
+      <trkpt lat="54.91421" lon="23.90705"/>
+      <trkpt lat="54.91451" lon="23.90707"/>
+      <trkpt lat="54.91451" lon="23.90688"/>
+      <trkpt lat="54.91451" lon="23.90707"/>
+      <trkpt lat="54.91421" lon="23.90705"/>
+      <trkpt lat="54.91418" lon="23.90741"/>
+      <trkpt lat="54.91471" lon="23.9076"/>
+      <trkpt lat="54.91493" lon="23.90762"/>
+      <trkpt lat="54.91502" lon="23.9077"/>
+      <trkpt lat="54.91994" lon="23.90812"/>
+      <trkpt lat="54.92034" lon="23.90825"/>
+      <trkpt lat="54.9219" lon="23.90893"/>
+      <trkpt lat="54.92235" lon="23.90906"/>
+      <trkpt lat="54.92306" lon="23.90906"/>
+      <trkpt lat="54.92334" lon="23.90895"/>
+      <trkpt lat="54.92419" lon="23.90832"/>
+      <trkpt lat="54.92465" lon="23.90773"/>
+      <trkpt lat="54.92499" lon="23.90814"/>
+      <trkpt lat="54.92465" lon="23.90773"/>
+      <trkpt lat="54.92503" lon="23.90697"/>
+      <trkpt lat="54.9254" lon="23.90609"/>
+      <trkpt lat="54.92587" lon="23.90439"/>
+      <trkpt lat="54.92634" lon="23.90293"/>
+      <trkpt lat="54.93008" lon="23.89397"/>
+      <trkpt lat="54.93029" lon="23.8943"/>
+      <trkpt lat="54.93035" lon="23.89451"/>
+      <trkpt lat="54.93032" lon="23.89475"/>
+    </trkseg>
+  </trk>
+</gpx>

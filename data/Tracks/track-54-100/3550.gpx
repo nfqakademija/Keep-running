@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Endomondo.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <author>
+      <name>Algirdas Skobas</name>
+    </author>
+    <link href="http://www.endomondo.com">
+      <text>Endomondo</text>
+    </link>
+    <time>2016-05-03T17:51:42Z</time>
+  </metadata>
+  <trk>
+    <name>Run</name>
+    <cmt>Panemunės šilas</cmt>
+    <src>http://www.endomondo.com/</src>
+    <link href="https://www.endomondo.com/routes/326811361">
+      <text>Run</text>
+    </link>
+    <type>RUNNING</type>
+    <trkseg>
+      <trkpt lat="54.90001" lon="23.96492"/>
+      <trkpt lat="54.90054" lon="23.96595"/>
+      <trkpt lat="54.90083" lon="23.96691"/>
+      <trkpt lat="54.90106" lon="23.96839"/>
+      <trkpt lat="54.89856" lon="23.96905"/>
+      <trkpt lat="54.89691" lon="23.96906"/>
+      <trkpt lat="54.89679" lon="23.96823"/>
+      <trkpt lat="54.89673" lon="23.96838"/>
+      <trkpt lat="54.89666" lon="23.96908"/>
+      <trkpt lat="54.8949" lon="23.96967"/>
+      <trkpt lat="54.89347" lon="23.97003"/>
+      <trkpt lat="54.89232" lon="23.97024"/>
+      <trkpt lat="54.89222" lon="23.97022"/>
+      <trkpt lat="54.89214" lon="23.97011"/>
+      <trkpt lat="54.89187" lon="23.96949"/>
+      <trkpt lat="54.88811" lon="23.97303"/>
+      <trkpt lat="54.88869" lon="23.97491"/>
+      <trkpt lat="54.88827" lon="23.97572"/>
+      <trkpt lat="54.88787" lon="23.97667"/>
+      <trkpt lat="54.88723" lon="23.97875"/>
+      <trkpt lat="54.88703" lon="23.97929"/>
+      <trkpt lat="54.88682" lon="23.9796"/>
+      <trkpt lat="54.88653" lon="23.97984"/>
+      <trkpt lat="54.88587" lon="23.98018"/>
+      <trkpt lat="54.88483" lon="23.9811"/>
+      <trkpt lat="54.88387" lon="23.98208"/>
+      <trkpt lat="54.88367" lon="23.98215"/>
+      <trkpt lat="54.88343" lon="23.98208"/>
+      <trkpt lat="54.88158" lon="23.98078"/>
+      <trkpt lat="54.88144" lon="23.98081"/>
+      <trkpt lat="54.88132" lon="23.98093"/>
+      <trkpt lat="54.88099" lon="23.98167"/>
+      <trkpt lat="54.88058" lon="23.98244"/>
+      <trkpt lat="54.87991" lon="23.98124"/>
+      <trkpt lat="54.87967" lon="23.98096"/>
+      <trkpt lat="54.87912" lon="23.98056"/>
+      <trkpt lat="54.87861" lon="23.98043"/>
+      <trkpt lat="54.87758" lon="23.98038"/>
+    </trkseg>
+  </trk>
+</gpx>

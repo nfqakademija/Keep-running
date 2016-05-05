@@ -18,9 +18,9 @@ class MapController extends Controller
         $distanceFrom = $request->query->get('distance_from') ?: 2;
         $distanceTo = $request->query->get('distance_to') ?: $maxDistanceToKilometer;
         $difficulty = (integer)$request->query->get('difficulty') ?: null;
-        if($trackId){
+        if ($trackId) {
             $track = $repositoryTracks->getTrackById($trackId);
-        }else{
+        } else {
             $distance = [];
             $distanceFromKm = (integer)$distanceFrom * 1000;
             $distanceToKm = (integer)$distanceTo * 1000;
@@ -36,7 +36,8 @@ class MapController extends Controller
         }
         $points = $track[0]['trackPoints'];
         $trackInformation = $repositoryTracks->getInformationAboutTrack($trackId)[0];
-        $trackUrl = $request->getScheme() . '://' . $request->getHttpHost() . $request->getPathInfo().'?trackId='.$trackId;
+        $trackUrl = $request->getScheme() . '://' . $request->getHttpHost()
+            . $request->getPathInfo() . '?trackId=' . $trackId;
         return $this->render('AppBundle:Map:index.html.twig', [
             'points' => $points,
             'tracks_levels' => $trackLevels,

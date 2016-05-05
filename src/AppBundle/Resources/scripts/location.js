@@ -128,7 +128,7 @@ function plotTrack(wayPoints,lineColor) {
     directionsService.push(new google.maps.DirectionsService());
     directionsDisplay.push(new google.maps.DirectionsRenderer({
         preserveViewport: true,
-        suppressMarkers: true,
+        suppressMarkers: false,
         polylineOptions: { strokeColor: lineColor,strokeOpacity: 0.7,strokeWeight: 5 }
     }));
 

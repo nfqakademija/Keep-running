@@ -34,7 +34,13 @@ class Tracks
         if ($difficulty) {
             $sql .= ' AND `running_tracks`.`trackLevelId` = ' . $difficulty;
         }
-        return $this->connection->fetchAll($sql);
+
+        $tracksAfterFilter = $this->connection->fetchAll($sql);
+        $countTracksAfterFilter = count($tracksAfterFilter) - 1;
+        $randomTrackNumber = rand(0, $countTracksAfterFilter);
+        $trackId = $tracksAfterFilter[$randomTrackNumber]['trackId'];
+        $track = $this->getTrackById($trackId);
+        return $track;
     }
 
     /**
@@ -42,7 +48,7 @@ class Tracks
      */
     public function getTrackById($trackId)
     {
-        $sql = 'SELECT `running_tracks`.`trackPoints`,`running_tracks`.`trackDistance`FROM `running_tracks` ';
+        $sql = 'SELECT `running_tracks`.`trackPoints`,`running_tracks`.`trackDistance`,`running_tracks`.`trackId` FROM `running_tracks` ';
         if ($trackId) {
             $sql .= 'WHERE `running_tracks`.`trackId`=' . (integer)$trackId;
         }

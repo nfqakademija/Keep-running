@@ -20,63 +20,6 @@ section {
     padding: 2em 0 5em;
 }
 
-body div#map-page {
-    header {
-        overflow: auto;
-        height: 10vh;
-
-        h1 {
-            float: left;
-            width: 50%;
-            margin: 0;
-            line-height: 10vh;
-            color: #2F2F2F;
-        }
-
-        nav {
-            float: right;
-            width: 50%;
-            text-align: right;
-
-            ul {
-                height: 10vh;
-                margin: 0;
-                line-height: 10vh;
-            }
-
-            li {
-                margin: 0 1em;
-            }
-
-            a {
-                text-decoration: none;
-                color: #2d6987;
-            }
-        }
-
-        ul li {
-            display: inline;
-        }
-    }
-
-    #filters-and-info,
-    #map {
-        display: inline-block;
-        vertical-align: top;
-        margin: 0;
-    }
-
-    #filters-and-info {
-        width: 15vw;
-        padding: 1em;
-    }
-
-    #map {
-        width: 80vw;
-        height: 90vh;
-    }
-}
-
 header#starting-page {
     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("../images/pexels-photo.jpg");
     background-attachment: fixed;
@@ -150,11 +93,11 @@ header#starting-page {
 #main-page-sections {
     text-align: center;
 
-    h1 {
-        font-size: 3em;
-    }
+    h1 { font-size: 3em; }
+    #filters-section, #about-project { background-color: #fcfcfc; }
 
     #filters-section {
+
         h2 {
             color: white;
             padding: 0.3em;
@@ -173,7 +116,8 @@ header#starting-page {
             font-size: 1.2em;
             display: inline-block;
             width: 40%;
-            background-color: #f8f8f8;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
         p {
@@ -226,6 +170,73 @@ header#starting-page {
             margin: 20px;
             color: orange;
         }
+    }
+}
+
+body div#map-page {
+    header {
+        overflow: auto;
+        height: 10vh;
+        padding: 0 2em;
+
+        h1 {
+            float: left;
+            width: 50%;
+            margin: 0;
+            line-height: 10vh;
+            color: #2F2F2F;
+        }
+
+        nav {
+            float: right;
+            width: 50%;
+            text-align: right;
+
+            ul {
+                height: 10vh;
+                margin: 0;
+                line-height: 10vh;
+            }
+
+            li {
+                margin: 0 1em;
+            }
+
+            a {
+                text-decoration: none;
+                color: #2d6987;
+            }
+        }
+
+        ul li {
+            display: inline;
+        }
+    }
+
+    #filters-and-map {
+        overflow: auto;
+    }
+
+    #filters-and-info,
+    #map {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+    }
+
+    #filters-and-info {
+        width: 100vw - 4vw - 80vw;
+        float: left;
+        padding: 0 2vw;
+        height: 90vh;
+        background-color: #f8f8f8;
+    }
+
+    #map {
+        width: 80vw;
+        height: 90vh;
+        float: right;
+        padding: 0;
     }
 }
 

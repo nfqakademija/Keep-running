@@ -12,50 +12,18 @@ body {
     margin: 0 auto;
 }
 
-h1 {
-    font-size: 2em;
-}
-
-section {
-    padding: 2em 0 5em;
-}
+h1 { font-size: 2em; }
+section { padding: 2em 0 5em; }
 
 header#starting-page {
     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("../images/pexels-photo.jpg");
     background-attachment: fixed;
+    background-position: top center;
     height: 100vh;
     position: relative;
     text-align: center;
     color: white;
     text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
-
-    nav {
-        text-align: right;
-        position: absolute;
-        top: 1em;
-        right: 0;
-        z-index: 10;
-
-        ul li {
-            display: inline;
-            margin-right: 2em;
-
-            a {
-                text-decoration: none;
-                color: white;
-                font-size: 0.8em;
-                border: 1px solid white;
-                border-radius: 100px;
-                padding: 0.5em 2em;
-                opacity: 0.7;
-                transition: 0.2s all;
-            }
-
-            a:hover {
-                opacity: 1;
-            }
-        }
-    }
 
     #text {
         position: absolute;
@@ -63,9 +31,7 @@ header#starting-page {
         left: 50%;
         transform: translate(-50%, -50%);
 
-        h1 {
-            font-size: 5em;
-        }
+        h1 { font-size: 5em; }
 
         p {
             line-height: 35px;
@@ -84,9 +50,7 @@ header#starting-page {
             transition: 0.5s all;
         }
 
-        a:hover {
-            background-color: orange;
-        }
+        a:hover { background-color: orange; }
     }
 }
 
@@ -97,7 +61,6 @@ header#starting-page {
     #filters-section, #about-project { background-color: #fcfcfc; }
 
     #filters-section {
-
         h2 {
             color: white;
             padding: 0.3em;
@@ -120,12 +83,11 @@ header#starting-page {
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        p {
-            margin: 0;
-        }
+        p { margin: 0; }
 
         #difficulties {
             font-size: 1.2em;
+
             .tooltip {
                 position: relative;
                 display: inline-block;
@@ -162,7 +124,6 @@ header#starting-page {
             .tooltip:hover .tooltiptext {
                 visibility: visible;
             }
-
         }
 
         button {
@@ -185,7 +146,7 @@ header#starting-page {
         background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/pexels-photo-60230.jpeg");
         background-attachment: fixed;
 
-        #bubbles article {
+        #articles article {
             width: 30%;
             margin: 1%;
             display: inline-block;
@@ -235,9 +196,7 @@ body div#map-page {
                 line-height: 10vh;
             }
 
-            li {
-                margin: 0 1em;
-            }
+            li { margin: 0 1em; }
 
             a {
                 text-decoration: none;
@@ -245,9 +204,7 @@ body div#map-page {
             }
         }
 
-        ul li {
-            display: inline;
-        }
+        ul li { display: inline; }
     }
 
     #filters-and-map {
@@ -255,13 +212,13 @@ body div#map-page {
         background-color: black;
     }
 
-
     #filters-and-info {
         width: 100vw - 5vw - 80vw;
         float: left;
         padding: 0 2vw;
         height: 90vh;
         background-color: transparent;
+
         .tooltip {
             position: relative;
             display: inline-block;
@@ -298,8 +255,6 @@ body div#map-page {
         .tooltip:hover .tooltiptext {
             visibility: visible;
         }
-
-
     }
 
     #map {
@@ -318,50 +273,71 @@ footer {
     color: #f8f8f8;
 }
 
-@media only screen and (max-width:1500px) {
+@media only screen and (max-width:1200px) {
+    .container { padding: 0 5em; }
+    #main-page-sections {
+        #filters-section {
+            .form-group { font-size: 1em; }
+        }
+    }
+}
 
-    #starting-page {
-        #text {
-            width: 60%;
-
-            h1 {
-                font-size: 4em;
-            }
-
-            p {
-                font-size: 1em;
-            }
-
-            a {
-                font-size: 1.2em;
+@media only screen and (max-width:1140px) {
+    #main-page-sections {
+        #uniqueness {
+            #articles article {
+                height: 250px;
             }
         }
     }
 }
 
-@media only screen and (max-width:1200px) {
-    #starting-page {
+@media only screen and (max-width:1030px) {
+    header#starting-page {
+        margin-top: 0;
+
         #text {
-            width: 70%;
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+            width: 80%;
+            margin: 0 auto 0;
 
-            p {
-                font-size: 0.8em;
+            h1 {
+                margin-top: 0;
+                padding-top: 15vh;
             }
+        }
+    }
+}
 
-            a {
-                font-size: 1em;
+@media only screen and (max-width:1000px) {
+    #main-page-sections {
+        #filters-section {
+            .form-group {
+                width: 100%;
+            }
+        }
+        #uniqueness {
+            #articles article {
+                width: 100%;
+                height: 200px;
             }
         }
     }
 }
 
 @media only screen and (max-width:750px) {
-    #starting-page nav {
-        text-align: center;
-        left: 0;
+    #main-page-sections {
+        #uniqueness {
+            #articles article {
+                height: 250px;
+            }
+        }
     }
 }
 
-@media only screen and (max-width:650px) {
-
+@media only screen and (max-width:550px) {
+    .container { padding: 0 2em; }
 }

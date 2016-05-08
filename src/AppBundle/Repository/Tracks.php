@@ -49,7 +49,7 @@ class Tracks
     public function getTrackById($trackId)
     {
         $sql = 'SELECT `running_tracks`.`trackPoints`,`running_tracks`.`trackDistance`,`running_tracks`.`trackId` '
-        .'FROM `running_tracks` ';
+            . 'FROM `running_tracks` ';
         if ($trackId) {
             $sql .= 'WHERE `running_tracks`.`trackId`=' . (integer)$trackId;
         }
@@ -103,16 +103,18 @@ class Tracks
     public function getInformationAboutTrack($trackId)
     {
         $sql = 'SELECT `running_tracks`.`trackDistance`,`running_tracks`.`trackName`, '
-        .'`running_tracks_level`.`levelName`,`running_tracks_level`.`levelId`  '
-            .'FROM `running_tracks` '
-            .'LEFT JOIN `running_tracks_level` ON `running_tracks_level`.`levelId`=`running_tracks`.`trackLevelId` '
-            .'WHERE `running_tracks`.`trackId`='.$trackId.' '
-            .'LIMIT 1';
+            . '`running_tracks_level`.`levelName`,`running_tracks_level`.`levelId`  '
+            . 'FROM `running_tracks` '
+            . 'LEFT JOIN `running_tracks_level` ON `running_tracks_level`.`levelId`=`running_tracks`.`trackLevelId` '
+            . 'WHERE `running_tracks`.`trackId`=' . $trackId . ' '
+            . 'LIMIT 1';
         return $this->connection->fetchAll($sql);
     }
-    public function  calculateDistance($points){
+
+    public function calculateDistance($points)
+    {
         $this->getDistance();
-        $distance =0;
+        $distance = 0;
         return $distance;
     }
 
@@ -123,13 +125,14 @@ class Tracks
      * @param $longitude2
      * @return int distance
      */
-    function getDistance($latitude1, $longitude1, $latitude2, $longitude2) {
+    function getDistance($latitude1, $longitude1, $latitude2, $longitude2)
+    {
         $earth_radius = 6371;
 
         $dLat = deg2rad($latitude2 - $latitude1);
         $dLon = deg2rad($longitude2 - $longitude1);
 
-        $a = sin($dLat/2) * sin($dLat/2) + cos(deg2rad($latitude1)) * cos(deg2rad($latitude2)) * sin($dLon/2) * sin($dLon/2);
+        $a = sin($dLat / 2) * sin($dLat / 2) + cos(deg2rad($latitude1)) * cos(deg2rad($latitude2)) * sin($dLon / 2) * sin($dLon / 2);
         $c = 2 * asin(sqrt($a));
         $d = $earth_radius * $c;
 

@@ -222,7 +222,7 @@ body div#map-page {
         transition: 0.6s opacity;
         background-color: rgba(255,255,255,0.8);
         position: absolute;
-        top: 12vh;
+        top: 15vh;
         left: 2vw;
         z-index: 10;
         padding: 0.5em 3em 3em;
@@ -232,6 +232,14 @@ body div#map-page {
         h1 { margin-top: 1em; }
         input { margin: 5px; }
         .form-group { margin-bottom: 1em; }
+
+        #share-track input {
+            font-size: 1.2em;
+            padding: 5px;
+            width: 100%;
+            margin-left: 0;
+            color: silver;
+        }
 
         .tooltip .tooltiptext {
             width: 250px;

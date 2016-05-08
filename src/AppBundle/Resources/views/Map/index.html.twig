@@ -55,9 +55,9 @@
                     <p><b>Ilgis:</b> {{ track_info.trackDistance / 1000 }} Km</p>
                     <p><b>Sunkumas:</b> {{ track_info.levelName }}</p>
                 </div>
-                <div class="share-track">
+                <div id="share-track">
                     <h1>Pasidalinti trasa</h1>
-                    <input type="text"  onClick="this.select();" readonly  name="distance_from" value="{{ track_url }}">
+                    <input type="text" onClick="this.select();" readonly  name="distance_from" value="{{ track_url }}">
                 </div>
             </div>
             <div id="map" data-points="{{ points }}"></div>

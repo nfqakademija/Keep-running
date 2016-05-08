@@ -215,24 +215,19 @@ body div#map-page {
 
     #filters-and-map {
         overflow: auto;
-    }
-
-    #filters-and-info,
-    #map {
-        display: inline-block;
-        vertical-align: top;
-        margin: 0;
+        background-color: black;
     }
 
     #filters-and-info {
-        width: 100vw - 4vw - 80vw;
+        width: 100vw - 5vw - 80vw;
         float: left;
         padding: 0 2vw;
         height: 90vh;
-        background-color: #f8f8f8;
+        background-color: transparent;
     }
 
     #map {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hands-way-guide-tourist.jpg');
         width: 80vw;
         height: 90vh;
         float: right;

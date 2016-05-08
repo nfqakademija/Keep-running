@@ -110,4 +110,30 @@ class Tracks
             .'LIMIT 1';
         return $this->connection->fetchAll($sql);
     }
+    public function  calculateDistance($points){
+        $this->getDistance();
+        $distance =0;
+        return $distance;
+    }
+
+    /**
+     * @param $latitude1
+     * @param $longitude1
+     * @param $latitude2
+     * @param $longitude2
+     * @return int distance
+     */
+    function getDistance($latitude1, $longitude1, $latitude2, $longitude2) {
+        $earth_radius = 6371;
+
+        $dLat = deg2rad($latitude2 - $latitude1);
+        $dLon = deg2rad($longitude2 - $longitude1);
+
+        $a = sin($dLat/2) * sin($dLat/2) + cos(deg2rad($latitude1)) * cos(deg2rad($latitude2)) * sin($dLon/2) * sin($dLon/2);
+        $c = 2 * asin(sqrt($a));
+        $d = $earth_radius * $c;
+
+        return $d;
+    }
+
 }

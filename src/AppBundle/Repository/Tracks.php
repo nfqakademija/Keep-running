@@ -125,10 +125,9 @@ class Tracks
      * @param $longitude2
      * @return int distance
      */
-    function getDistance($latitude1, $longitude1, $latitude2, $longitude2)
+    public function getDistance($latitude1, $longitude1, $latitude2, $longitude2)
     {
-        $earth_radius = 6371;
-
+        $earth_radius = 637100;
         $dLat = deg2rad($latitude2 - $latitude1);
         $dLon = deg2rad($longitude2 - $longitude1);
 

@@ -37,9 +37,12 @@
                             <div id="difficulties">
                                 {% for level in tracks_levels %}
                                     <input type="radio" name="difficulty" value="{{ level.levelId }}"
-                                    {% if level.levelId == track_info.levelId %}
-                                        checked
-                                    {% endif %} >{{ level.levelName }}
+                                            {% if level.levelId == track_info.levelId %}
+                                                checked
+                                            {% endif %} ><div class="tooltip">
+                                    {{ level.levelName }}
+                                    <span class="tooltiptext">{{ level.levelDescription }}</span>
+                                </div>
                                 {% endfor %}
                             </div>
                         </div>

@@ -126,6 +126,43 @@ header#starting-page {
 
         #difficulties {
             font-size: 1.2em;
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 300px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                top: 100%;
+                left: 50%;
+                margin-left: -147px;
+                font-size: 0.8em;
+            }
+
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: transparent transparent black transparent;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+
         }
 
         button {
@@ -218,12 +255,51 @@ body div#map-page {
         background-color: black;
     }
 
+
     #filters-and-info {
         width: 100vw - 5vw - 80vw;
         float: left;
         padding: 0 2vw;
         height: 90vh;
         background-color: transparent;
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 250px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 115%;
+            left: 50%;
+            margin-left: -54px;
+            font-size: 1.1em;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 22%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent black transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+
     }
 
     #map {

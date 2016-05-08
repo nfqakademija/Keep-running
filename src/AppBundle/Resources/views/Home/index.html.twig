@@ -48,7 +48,9 @@
                             <div id="difficulties">
                                 {% for level in tracks_levels %}
                                     <input type="radio" name="difficulty" value="{{ level.levelId }}" {% if level.levelId == 2 %}checked{% endif %} >
-                                    {{ level.levelName }}
+                                    <div class="tooltip">{{ level.levelName }}
+                                        <span class="tooltiptext">{{ level.levelDescription }}</span>
+                                    </div>
                                 {% endfor %}
                             </div>
                         </div>
@@ -128,6 +130,10 @@
             });
             $( "#distance-text" ).html( $( "#distance_slider_range" ).slider( "values", 0 ) +
                     " - " + $( "#distance_slider_range" ).slider( "values", 1 ) + " km" );
+        });
+
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 {% endblock %}

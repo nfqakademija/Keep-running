@@ -33,12 +33,11 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest(dir.dist + 'js'));
 });
 
-gulp.task('scrollscript', function() {
+gulp.task('scroll', function() {
     gulp.src([
-            dir.bower + 'jquery/dist/jquery.min.js',
             dir.assets + 'scripts/smoothScroller.js'
         ])
-        .pipe(concat('scroll.js'))
+        .pipe(concat('smoothScroller.js'))
         .pipe(uglify())
         .pipe(gulp.dest(dir.dist + 'js'));
 });
@@ -57,11 +56,4 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest(dir.dist + 'fonts'));
 });
 
-//TODO:write gulp watcher task
-
-//gulp.task('sass:watch', function () {
-//    gulp.watch('./sass/**/*.scss', ['sass']);
-//});
-
-
-gulp.task('default', ['sass', 'scripts', 'scrollscript', 'fonts', 'images']);
+gulp.task('default', ['sass', 'scripts', 'scroll', 'fonts', 'images']);

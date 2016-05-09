@@ -49,7 +49,6 @@ class Tracks
             } else {
                 $sql .= ' AND `running_tracks`.`trackDistance` BETWEEN ' . $distanceFrom . ' AND ' . $distanceTo;
             }
-
         }
         if ($difficulty) {
             $sql .= ' AND `running_tracks`.`trackLevelId` = ' . $difficulty;

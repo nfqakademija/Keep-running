@@ -27,9 +27,18 @@ gulp.task('scripts', function() {
             //...
             // Main JS file
             dir.assets + 'scripts/location.js',
-            dir.assets + 'scripts/smoothScroller.js'
         ])
         .pipe(concat('script.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(dir.dist + 'js'));
+});
+
+gulp.task('scrollscript', function() {
+    gulp.src([
+            dir.bower + 'jquery/dist/jquery.min.js',
+            dir.assets + 'scripts/smoothScroller.js'
+        ])
+        .pipe(concat('scroll.js'))
         .pipe(uglify())
         .pipe(gulp.dest(dir.dist + 'js'));
 });
@@ -55,4 +64,4 @@ gulp.task('fonts', function() {
 //});
 
 
-gulp.task('default', ['sass', 'scripts', 'fonts', 'images']);
+gulp.task('default', ['sass', 'scripts', 'scrollscript', 'fonts', 'images']);

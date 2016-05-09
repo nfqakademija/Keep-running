@@ -20,6 +20,19 @@ class Tracks
         return $this->connection->fetchAll($sql);
     }
 
+    public function getRandomTrack($difficulty = null)
+    {
+        $sql = 'SELECT `running_tracks`.`trackId` FROM `running_tracks` WHERE TRUE';
+        if ($difficulty) {
+            $sql .= ' AND `running_tracks`.`trackLevelId` = ' . $difficulty;
+        }
+        $tracks = $this->connection->fetchAll($sql);
+        $countTracks = count($tracks) - 1;
+        $randomTrackNumber = rand(0, $countTracks);
+        $trackId = $tracks[$randomTrackNumber]['trackId'];
+        return $trackId;
+    }
+
     /**
      * @return array
      */
@@ -29,16 +42,26 @@ class Tracks
         if ($distance) {
             $distanceFrom = $distance['distanceFrom'];
             $distanceTo = $distance['distanceTo'];
-            $sql .= ' AND `running_tracks`.`trackDistance` BETWEEN ' . $distanceFrom . ' AND ' . $distanceTo;
+            if ($distanceFrom == $distanceTo) {
+                $distanceFrom = $distanceFrom - 1000;
+                $distanceTo = $distanceTo + 1000;
+                $sql .= ' AND `running_tracks`.`trackDistance` BETWEEN ' . $distanceFrom . ' AND ' . $distanceTo;
+            } else {
+                $sql .= ' AND `running_tracks`.`trackDistance` BETWEEN ' . $distanceFrom . ' AND ' . $distanceTo;
+            }
+
         }
         if ($difficulty) {
             $sql .= ' AND `running_tracks`.`trackLevelId` = ' . $difficulty;
         }
-
         $tracksAfterFilter = $this->connection->fetchAll($sql);
-        $countTracksAfterFilter = count($tracksAfterFilter) - 1;
-        $randomTrackNumber = rand(0, $countTracksAfterFilter);
-        $trackId = $tracksAfterFilter[$randomTrackNumber]['trackId'];
+        if (count($tracksAfterFilter)) {
+            $countTracksAfterFilter = count($tracksAfterFilter) - 1;
+            $randomTrackNumber = rand(0, $countTracksAfterFilter);
+            $trackId = $tracksAfterFilter[$randomTrackNumber]['trackId'];
+        } else {
+            $trackId = $this->getRandomTrack($difficulty);
+        }
         $track = $this->getTrackById($trackId);
         return $track;
     }

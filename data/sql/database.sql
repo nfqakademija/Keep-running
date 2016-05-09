@@ -19,6 +19,6 @@ PRIMARY KEY (`levelId`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_lithuanian_ci;
 
 INSERT INTO `running_tracks_level` (`levelId`,`levelName`,`levelDescription`) VALUES
-(NULL,'Lengva','Šios trasos skirtos pradedantiesiems bėgikams, kurie nori pradėti bėgioti, bet nežino kur bėgti. Šio lygio trasos yra nesunkiai įveikiamos ir nereikalaujančios itin gero sportinio pasirošimo.'),
+(NULL,'Lengva','Šios trasos skirtos pradedantiesiems bėgikams, kurie nori pradėti bėgioti, bet nežino kur bėgti. Šio lygio trasos yra nesunkiai įveikiamos ir nereikalaujančios itin gero sportinio pasiruošimo.'),
 (NULL,'Vidutinė','Vidutinio lygio trasos skirtos bėgikams, kurie bėga ne pirmą kartą ir žino savo bėgimo galimybes. Šio lygio trasos reikalauja pasiruošimo ir ypač geros nuotaikos bėgant pasirinkus vieną iš trasų.'),
-(NULL,'Sunki','Sunki trasa skirta bėgikams, kurie nori tikro iššukio. Šio lygio trasa reikalauja ištvernės, ryžto ir gero pasirošimo. Įveikus vieną iš šio lygio trasų galėsite save vadinti tikru bėgimo meistru.');
+(NULL,'Sunki','Sunki trasa skirta bėgikams, kurie nori tikro iššūkio. Šio lygio trasa reikalauja ištvermės, ryžto ir gero pasiruošimo. Įveikus vieną iš šio lygio trasų galėsite save vadinti tikru bėgimo meistru.');

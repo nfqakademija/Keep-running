@@ -26,8 +26,8 @@
                         <div class="filters-input">
                             <p id="distance-text"></p>
                             <span style="display: none"><input id="distance" type="text" readonly=""> km</span>
-                            <input id="distance_from" type="hidden"  name="distance_from" value="{{ distance_from }}">
-                            <input id="distance_to" type="hidden"  name="distance_to" value="{{ distance_to }}">
+                            <input id="distance_from" type="hidden" name="distance_from" value="{{ distance_from }}">
+                            <input id="distance_to" type="hidden" name="distance_to" value="{{ distance_to }}">
                             <div id="distance_slider_range"></div>
                         </div>
                     </div>
@@ -39,10 +39,11 @@
                                     <input type="radio" name="difficulty" value="{{ level.levelId }}"
                                             {% if level.levelId == track_info.levelId %}
                                                 checked
-                                            {% endif %} ><div class="tooltip">
-                                    {{ level.levelName }}
-                                    <span class="tooltiptext">{{ level.levelDescription }}</span>
-                                </div>
+                                            {% endif %} >
+                                    <div class="tooltip">
+                                        {{ level.levelName }}
+                                        <span class="tooltiptext">{{ level.levelDescription }}</span>
+                                    </div>
                                 {% endfor %}
                             </div>
                         </div>
@@ -50,14 +51,19 @@
                     <button>Generuoti trasą</button>
                 </form>
                 <div id="info-about-track">
-                    <h1>Sugeneruota trasa</h1>
+                    {% if $distance_from==$distance_to %}
+                    <h1>Trasos sugeneruoti nepavyko</h1>
+                    <p>Pateikime labiausiai jūsų kriterijus tenkinančią trasą.</p>
+                    {% else %}
+                        <h1>Sugeneruota trasa</h1>
+                    {% endif %}
                     <h2>{{ track_info.trackName }}</h2>
                     <p><b>Ilgis:</b> {{ track_info.trackDistance / 1000 }} Km</p>
                     <p><b>Sunkumas:</b> {{ track_info.levelName }}</p>
                 </div>
                 <div id="share-track">
                     <h1>Pasidalinti trasa</h1>
-                    <input type="text" onClick="this.select();" readonly  name="distance_from" value="{{ track_url }}">
+                    <input type="text" onClick="this.select();" readonly name="distance_from" value="{{ track_url }}">
                 </div>
             </div>
             <div id="map" data-points="{{ points }}"></div>
@@ -79,14 +85,14 @@
                 values: [{{ distance_from }}, {{ distance_to }}],
                 min: 2,
                 max: {{ max_distance }},
-                slide: function( event, ui ) {
-                    $( "#distance-text" ).html( ui.values[0] + " - " + ui.values[1] + " km");
-                    $( "#distance_from" ).val(ui.values[0]);
-                    $( "#distance_to" ).val(ui.values[1]);
+                slide: function (event, ui) {
+                    $("#distance-text").html(ui.values[0] + " - " + ui.values[1] + " km");
+                    $("#distance_from").val(ui.values[0]);
+                    $("#distance_to").val(ui.values[1]);
                 }
             });
-            $( "#distance-text" ).html( $( "#distance_slider_range" ).slider( "values", 0 ) +
-                    " - " + $( "#distance_slider_range" ).slider( "values", 1 ) + " km" );
+            $("#distance-text").html($("#distance_slider_range").slider("values", 0) +
+                    " - " + $("#distance_slider_range").slider("values", 1) + " km");
         });
     </script>
 

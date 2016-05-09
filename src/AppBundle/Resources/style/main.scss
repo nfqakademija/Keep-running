@@ -191,7 +191,11 @@ body div#map-page {
             width: 25%;
             margin: 0;
             line-height: 10vh;
-            color: #2F2F2F;
+
+            a {
+                color: #2F2F2F;
+                text-decoration: none;
+            }
         }
 
         nav {
